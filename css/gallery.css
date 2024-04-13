@@ -1,0 +1,118 @@
+/* Add this CSS file for styling the gallery images */
+main{
+    background-color:rgb(238, 246, 255);
+}
+main h1{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: 2.5rem; */
+    color: #008080;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.gallery-container {
+    text-align: center;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* color: rgb(194, 106, 106); */
+
+}
+.gallery-container h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #008080;
+    margin-top: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    /* padding: 0px 30px 40px 50px; */
+    /* padding-left: 100px; */
+    justify-items: center;
+}
+
+.gallery img {
+    width: 95%; 
+    max-width: 400px;
+    height: 300px; 
+    margin-right: 30px;
+    justify-content: space-around;
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* mobile view ==============================================================================================================================================================================*/
+@media only screen and (min-width: 200px)and (max-width: 600px) {
+    .gallery img {
+        width: 75%; 
+        /* max-width: 600px; */
+        height: 200px; 
+        justify-content: space-around;
+        border: 2px solid rgb(7, 7, 7);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+    }
+}
+
+/* 400 to 500================================================================================================================================================================================= */
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+    .gallery img {
+        width: 70%; 
+        /* max-width: 400px; */
+        height: 300px; 
+        /* margin-right: 30px; */
+        justify-content: space-around;
+        border: 2px solid rgb(7, 7, 7);
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: -40px;
+        transition: transform 0.1s ease-in-out;
+    }
+}
+
+/* Tablet View ==============================================================================================================================================================================*/
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+    
+}
+
+/* 750 to 950   ======================================================================================================================================================================== */
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+
+}
+
+/* 950 to 1100   ======================================================================================================================================================================== */
+@media only screen and (min-width: 950px) and (max-width: 1100px) {
+
+}
+
+/* laptop view  ========================================================================================================================================================================== */
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+    
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 1350px) {
+       
+}
+
+
+
