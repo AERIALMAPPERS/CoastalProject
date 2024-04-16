@@ -94,115 +94,76 @@ text-align: center;
  }
 
 
+/* 200 to 300================================================================================================================================================================================= */
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+    main {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color:rgb(238, 246, 255);
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #maplist {
+        width: 98%;
+        
+        margin-top: 2%;
+      
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+     display: flex;
+        justify-content: center;
+     
+    }
+  
+    
+    .map-main {
+        width: 98%;
+        height: 450px;
+        /* background-color: #944c4c; */
+        display: flex;
+        margin-left: 3%;
+        /* border:1px solid black; */
+        /* margin-bottom: 2%; */
+    }
+    #map-container{
+        width: 95%;
+        height: 450px;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        border:2px solid black;
+    
+    }
+    form select {
+        width: 80%;
+        background-color: #fff;
+        font-size: 0.75rem;   
+    }
+    h2 {
+        font-size: small;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        color: #008080;
+        
+    }
+    form {
+        gap: 2px;
+    }
+    
+}
 
 /* mobile view ===============================================================================================================================================================================*/
 @media only screen and (min-width: 300px)and (max-width: 600px) {
     
-    .main {
-        width: 100%;
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;
-        justify-content: center;
-        /* background-color: pink; */
-    }
-    
-    #maplist {
- display: flex;
-
-        width: 95%;
-        border: 1px solid black;
-        margin-bottom: 20px; /* Space between maplist and map-main */
-    }
-    
-    #maplist h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .map-main {
-        display: flex;
-        width: 95%;
-        border: 1px solid black;
-    }
-    form select {
-        width: 80%;
-        background-color: #fff;
-        font-size: 0.75rem;   
-    }
-    form {
-        gap: 4px;
-    }
-    /* main {
+    main {
         width: 100%;
         height: auto;
         color: white;
-        display: inline-block;
-    }
-
-    #maplist {
-        width: 100%;
-        border: 1px solid black;
-        background-color: rgb(234, 235, 235);
-    }
-
-    #maplist h2 {
-        font-size: 1rem;
-    }
-
-    .map-main {
-        width: 100%;
-        height: 100%;
-        display: inline-block;
-    }
-
-    #map {
-        width: 100%;
-
-        margin-top: 15px;
-        margin-left: 0px;
-        align-items: center;
-
-        border: 2px solid black;
-    }
-
-    form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    form select {
-        width: 100%;
-        padding: 4px;
-        background-color: #fff;
-        border-radius: 10px;
-        outline: none;
-        font-size: 0.75rem;
-        box-shadow: 0, 5px, 10px, 0 rgb(0, 0, 0, 30);
-        cursor: pointer;
-    }
-
-    #citySelect {
-        width: 100%;
-        padding: 4px;
-        background-color: #fff;
-        border-radius: 10px;
-        outline: none;
-
-        font-size: 0.8rem;
-        cursor: pointer;
-    } */
-
-}
-
-/* 200 to 300================================================================================================================================================================================= */
-@media only screen and (min-width: 200px) and (max-width: 300px) {
-    .main {
-        width: 100%;
+        background-color:rgb(238, 246, 255);
         display: flex;
         flex-direction: column; /* Stack elements vertically */
         align-items: center;
@@ -210,123 +171,58 @@ text-align: center;
     }
     
     #maplist {
-        width: 95%;
+        width: 98%;
+        /* margin-left: 2%; */
+        /* margin-bottom: 2%; */
+        margin-top: 2%;
+      
         border: 1px solid black;
-        margin-bottom: 20px; /* Space between maplist and map-main */
+        background-color: rgb(234, 235, 235);
+     display: flex;
+        justify-content: center;
+     
     }
-    
-    #maplist h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-top: 20px;
-    }
+  
     
     .map-main {
+        width: 98%;
+        height: 450px;
+        /* background-color: #944c4c; */
+        display: flex;
+        /* border:1px solid black; */
+        /* margin-bottom: 2%; */
+    }
+    #map-container{
         width: 95%;
-        border: 1px solid black;
+        height: 450px;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        border:1px solid black;
+    
     }
     form select {
         width: 80%;
         background-color: #fff;
         font-size: 0.75rem;   
     }
+    h2 {
+        font-size: 3.5vw;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        color: #008080;
+        
+    }
     form {
         gap: 4px;
     }
     
-    /* main {
-        width: 100%;
-        height: auto;
-        color: white;
-        display: inline-block;
-    }
-
-    #maplist {
-        width: 95%;
-        border: 1px solid black;
-        text-align: center;
-        background-color: rgb(234, 235, 235);
-    }
-
-    #maplist h2 {
-        font-size: 1.2rem;
-        margin-left: 35px;
-        margin-top: 20px;
-    }
-
-    .map-main {
-        width: 100%;
-        background-color: #944c4c;
-        display: inline-block;
-    } */
-
-    /* #map {
-        width: 100%;
-        margin-top: 15px;
-        margin-left: 0px;
-        align-items: center;
-        background-color: #d65a5a;
-        border: 2px solid black;
-    } */
-
-
-    /* form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 3px;
-        margin-top: -20px;
-    }
-
-    form select {
-        width: 100%;
-        padding: 4px;
-        background-color: #fff;
-        border-radius: 10px;
-        outline: none;
-        font-size: 0.70rem;
-        box-shadow: 0, 5px, 10px, 0 rgb(0, 0, 0, 30);
-        cursor: pointer;
-    } */
 
 }
 
 /* 400 to 500================================================================================================================================================================================= */
 /* @media only screen and (min-width: 400px) and (max-width: 500px) {
   
-    .main {
-        width: 100%;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-    }
-    
-    #maplist {
-        width: 95%;
-        border: 1px solid black;
-        margin-bottom: 20px; 
-    }
-    
-    #maplist h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-top: 20px;
-    }
-    
-    .map-main {
-        width: 95%;
-        border: 1px solid black;
-    }
-    form select {
-        width: 80%;
-        background-color: #fff;
-        font-size: 0.75rem;   
-    }
-    form {
-        gap: 4px;
-    }
    
 
 } */
