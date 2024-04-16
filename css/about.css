@@ -169,6 +169,32 @@ main {
     color: #008080;
 
 }
+/* sliding img */
+.sliding {
+    height: 400px;
+    width: 50%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+.slideshow-container {
+    max-width: 500px;
+    height: 700px;
+    position: relative;
+    /* background-color: #776060; */
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+
+
+
+.slideshow-container img {
+    width: 100%;
+}
 
 
 /* mobile view ==============================================================================================================================================================================*/
@@ -224,6 +250,36 @@ main {
     #brief-content .img {
         width: 100%;
     }
+    /* slide show */
+.sliding {
+    height: 150px;
+    width: 70%;
+    margin-top: -10px;
+    margin-left: -20px;
+    /* box-shadow: 2px 2px 2px rgb(169, 170, 170); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    max-width: 250px;
+    height: 150px;
+    position: relative;
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+
+.mySlides img {
+    height: 150px;
+    width: 250px;
+    margin-left: -35px;
+}
+
+.slideshow-container img {
+    width: 100%;
+}
+
 }
 
 /* mobile view ==============================================================================================================================================================================*/
@@ -251,6 +307,34 @@ main {
     #about-content .img {
         width: 100%;
     }
+    /* slide show */
+
+.sliding {
+    height: 300px;
+    width: 70%;
+    margin-top: 0px;
+    margin-left: 100px;
+    /* box-shadow: 2px 2px 2px rgb(169, 170, 170); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    height: 300px;
+    width: 350px;
+}
+
+.slideshow-container img {
+    width: 100%;
+}
 
 /* technology */
     .technology {
@@ -329,6 +413,42 @@ main {
     #brief-content .img {
         width: 100%;
     }
+    /* slide show */
+
+.sliding {
+    height: 300px;
+    width: 70%;
+    margin-top: 0px;
+    margin-left: 100px;
+    /* box-shadow: 2px 2px 2px rgb(169, 170, 170); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    height: 300px;
+    width: 450px;
+}
+
+.slideshow-container img {
+    width: 100%;
+}
+.btn-slide {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 /* Laptop view  ========================================================================================================================================================================== */
@@ -380,4 +500,75 @@ main {
     .img img {
         width: 90%;
     }
+    /* slide show */
+.sliding {
+    height: 400px;
+    width: 50%;
+    margin-top: 40px;
+    /* box-shadow: 5px 5px 5px rgb(169, 170, 170); */
+    /* background-color: rgb(248, 228, 202); */
+    /* border: 1px solid rgb(54, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    height: 400px;
+    position: relative;
+    /* background-color: #776060; */
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    height: 400px;
+    width: 500px;
+}
+.slideshow-container img {
+    width: 100%;
+}
+}
+/* ============================================================================================================================================================= */
+@media only screen and (min-width: 1350px) {
+   
+
+    /* slide show */
+    .sliding {
+        height: 400px;
+        width: 70%;
+        margin-top: 40px;
+        /* box-shadow: 5px 5px 5px rgb(169, 170, 170); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 300px;
+    }
+
+    .slideshow-container {
+        max-width: 800px;
+        height: 500px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides img {
+        height: 400px;
+        width: 800px;
+    }
+
+    .slideshow-container img {
+        width: 100%;
+    }
+
+    
 }
