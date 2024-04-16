@@ -25,3 +25,41 @@ function toggleReadMore1() {
       readMoreButton.textContent = 'Read More';
   }
 }
+
+
+
+// slide show
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Automatically change slides every 1500 milliseconds (1.5 seconds)
+setInterval(function () {
+  plusSlides(1);
+}, 1000);
+
+function openMapPage() {
+  window.location.href = "map.html"; // Change "contact.html" to the actual path of your contact page
+}
