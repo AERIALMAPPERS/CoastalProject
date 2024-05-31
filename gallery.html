@@ -2,15 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Coastline Of Maharashtra</title>
     <link rel="icon" type="image/png" href="./image/logo/favicon.png">
-    
+    <link rel="stylesheet" href="./css/gallery.css" >
+    <link rel="stylesheet" href="./css/styles.css" >
 </head>
-<link rel="stylesheet" href="./css/gallery.css" />
-<link rel="stylesheet" href="./css/styles.css" />
-
 <body>
     <!-- live date and zoom in zoom out buton -->
     <div id="zoomButtons">
@@ -45,15 +43,17 @@
   </nav>
 <!-- <br> -->
 
-<marquee behavior="" direction="left">
-  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
-  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
-  villages in the coastline area of Maharashtra .
-</marquee>
+<div class="marquee-container">
+  <div class="marquee">
+Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+villages in the coastline area of Maharashtra .
+</div>
+</div>
 
     <main>
+      <div class="gallery-container">
         <h1>GALLERY</h1>
-        <section class="gallery-container">
             <!-- <h1>GALLERY</h1> -->
             <div class="gallery">
                 <img src="./image/gallery/11.jpeg" alt="">
@@ -66,10 +66,9 @@
                 <img src="./image/gallery/img7.JPG" alt="">
                 <img src="./image/gallery/img8.jpeg" alt="">
                 <img src="./image/gallery/img9.png" alt="">
-
                 <img src="./image/gallery/img4.jpeg" alt="">
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -106,7 +105,7 @@
               <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
               <!-- <li>GOI Web Directory</li> -->
           </ul>
-      </div>
+          </div>
     
         <div class="planning">
           <h3><a href="./planning.html">Planning</a></h3>
@@ -117,17 +116,18 @@
         </div>
     
         <div class="contact-details">
-          <ul>
             <h3><a href="#/contact.html">Contact Details</a></h3>
+            <ul>
             <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
-            <li> <p>Contact No: +91 22 2757 1537</p></li>
+            <li> <p>Contact No: +91 22 2757 1537</p></li></ul>
             <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
             <li><p>Email: info@amdatalab.com</p></li>
             </ul> -->
         </div>
       </div>
       <div class="footer_img">
-        <marquee scrollamount="10" scroll-container>
+        <div class="marquee-container">
+          <div class="marquee-1">
             <img src="./image/footer/p1.jpg" alt="">
             <img src="./image/footer/p2.png" alt="">
             <img src="./image/footer/p3.webp" alt="">
@@ -136,17 +136,23 @@
             <img src="./image/footer/p6.png" alt="">
             <img src="./image/footer/p7.png" alt="">
             <img src="./image/footer/p8.jpg" alt="">
-        </marquee>
+       </div>
+       </div>
     </div> 
       <div class="copyright">
         &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
       </div>
-    </footer>
+      <div class="w3">
+        <img src="./image/f1cs.jpg" alt="">
+        <img src="./image/f2cs.png" alt="">
+        <img src="./image/f3cs.png" alt="">
+        <img src="./image/f4cs.gif" alt="">
+        </div>
+   
 </footer>
     <script src="./js/index.js"></script>
-    <br />
-    <br />
-    </header>
+    <br >
+    <br >
     <script src="./js/index.js"></script>
     <script src="./js/liveDate.js"></script>
     <script src="./js/zoomInOut.js"></script>

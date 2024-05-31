@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coastline Of Maharashtra</title>
     <link rel="icon" type="image/png" href="./image/logo/favicon.png">
-    
-</head>
-<link rel="stylesheet" href="./css/about.css" />
+    <!-- <link rel="stylesheet" href="./css/demo.css" > -->
+    <link rel="stylesheet" href="./css/about.css" />
 <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
 
 <body>
      <!-- live date and zoom in zoom out buton -->
@@ -45,11 +46,13 @@
     </nav>
 <!-- <br> -->
 
-<marquee behavior="" direction="left">
-    Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
-    download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
-    villages in the coastline area of Maharashtra .
-</marquee>
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
 
     <main>
         <!-- about detail -->
@@ -88,12 +91,34 @@
                 </div>
             </div>
         </div>
-
+        <div class="mainbox">
+            <div class="Region">
+       
+              
+                <h1>REGION </h1>
+                <ul class="image-list">
+                    <li><a href="#" onclick="displayImage(event, './image/about/palghar.jpg')">Palghar Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Raigadf.jpg')">Raigad Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Mumbai.jpg')"> Mumbai Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Thanef.jpg')"> Thane Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Ratnagiriff.jpg')">Ratnagiri Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Sindhudurg.jpg')">Sindhudurg Region</a></li>
+                </ul>
+            </div>
+        <div class="map-img">
+            <img  alt="" id="displayedImage" src="./image/about/img3.png">
+            <button id="A1" onclick="displayImage(event,'./image/about/img3.png')">State</button>
+            <button id="A2" onclick="displayImage(event,'./image/about/costal.png')">Region</button>
+            <button id="A3" onclick="displayImage(event,'./image/about/img1.jpg')">Circle</button>
+            <button id="A4" onclick="displayImage(event,'./image/about/img3.png')">Back</button>
+            
+            </div>
+        </div> 
         <div class="project-brief">
 
             <div id="brief-content">
                 <div class="img">
-                    <img src="./image/about/bar chart.jpg" alt="" id="barchart">
+                    <img src="./image/about/barchart.jpg" alt="" id="barchart">
                 </div>
                 <div class="brief-p">
                     <h1>PROJECT BRIEF</h1>
@@ -138,6 +163,10 @@
 
             </div>
         </div>
+
+
+
+        
         <!-- sliding image -->
 <div class="sliding">
   <div class="slideshow-container">
@@ -165,8 +194,10 @@
       <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
   </div>
+  </div>
     </main>
 <br>
+    <!-- ////////////////////////////////////////////// -->
     
     <footer>
         <div class="footer-container">
@@ -205,15 +236,17 @@
         </div>
       
           <div class="planning">
-            <ul><h3><a href="./planning.html">Planning</a></h3>   
+            <h3><a href="./planning.html">Planning</a></h3> 
+            <ul>  
               <li><a href="#">Scheduling</a></li>
               <li><a href="#">Planning</a></li>
             </ul>
           </div>
       
           <div class="contact-details">
-            <ul>
+           
                 <h3><a href="#/contact.html">Contact Details</a></h3>
+                <ul>
                 <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
                 <li> <p>Contact No: +91 22 2757 1537</p></li>
                 <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
@@ -222,7 +255,8 @@
           </div>
         </div>
         <div class="footer_img">
-            <marquee scrollamount="10" scroll-container>
+            <div class="marquee-container">
+            <div class="marquee-1">
                 <img src="./image/footer/p1.jpg" alt="">
                 <img src="./image/footer/p2.png" alt="">
                 <img src="./image/footer/p3.webp" alt="">
@@ -231,18 +265,23 @@
                 <img src="./image/footer/p6.png" alt="">
                 <img src="./image/footer/p7.png" alt="">
                 <img src="./image/footer/p8.jpg" alt="">
-            </marquee>
+            </div>
+            </div>
         </div> 
         <div class="copyright">
           &copy; 2023,2024 Maharashtra Coastal |Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
         </div>
+        <div class="w3">
+            <img src="./image/f1cs.jpg" alt="">
+            <img src="./image/f2cs.png" alt="">
+            <img src="./image/f3cs.png" alt="">
+            <img src="./image/f4cs.gif" alt="">
+            </div>
       </footer>
-
-    </header>
-    <!-- Java Script -->
-    <script src="./js/about.js"></script>
-    <script src="./js/liveDate.js"></script>
-    <script src="./js/zoomInOut.js"></script>
+ <!-- Java Script -->
+ <script src="./js/about.js"></script>
+ <script src="./js/liveDate.js"></script>
+ <script src="./js/zoomInOut.js"></script>
+ <!-- <script src="./js/demo.js"></script> -->
 </body>
-
 </html>

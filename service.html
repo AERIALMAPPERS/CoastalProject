@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Coastline Of Maharashtra</title>
     <link rel="icon" type="image/png" href="./image/logo/favicon.png">
-    
+    <link rel="stylesheet" href="./css/service.css" >
+<link rel="stylesheet" href="./css/styles.css" >
 </head>
-<link rel="stylesheet" href="./css/service.css" />
-<link rel="stylesheet" href="./css/styles.css" />
+
 
 <body>
     <!-- live date and zoom in zoom out buton -->
@@ -45,11 +45,13 @@
     </nav>
 <!-- <br> -->
 
-<marquee behavior="" direction="left">
-    Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
-    download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
-    villages in the coastline area of Maharashtra .
-</marquee>
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
 
     <main>
         <div class="head">
@@ -91,7 +93,7 @@
                     </div>
                 </div>
                 <div class="box1" data-category="gis">
-                    <img src="./image/service/GIS 1.png " alt="" id="GIS-img" title="GIS Image" class="image-hover">
+                    <img src="./image/service/GIS1.png" alt="" id="GIS-img" title="GIS Image" class="image-hover">
                     <div class="layer">
                         <h3>Gis</h3>
                     </div>
@@ -115,7 +117,7 @@
                 <!-- DRONE service INFO -->
                 <div id="drone-info-right">
 
-                    <p>
+
                     <h2>Drone Service</h2>
                     <br>
                     <p>Map’s the first need of the beginning of any project from small construction work to big
@@ -135,11 +137,11 @@
                         3D.Which includes support for orthophotography, digital surface and 3D models.
 
                     </p>
-                    </p>
+                  
                 </div>
                 <!-- GIS service info -->
                 <div id="gis-info-right">
-                    <p>
+                   
                     <h2>geographic information system (GIS) Service</h2>
                     <br>
                     <p>A geographic information system (GIS) is a system that creates, manages, analyzes, and maps
@@ -151,11 +153,11 @@
                         GIS helps users understand patterns, relationships, and geographic context.
                         The benefits include improved communication and efficiency as well as better management and
                         decision making.</P>
-                    </p>
+              
                 </div>
                 <!-- 3D service info -->
                 <div id="3d-model-info-right">
-                    <p>
+                    
                     <h2>3-D Mapping Service</h2>
                     <br>
                     <p> 3-D Mapping, aka “Photogrammetry 3D Models” are used in fields such as topographic mapping,
@@ -164,11 +166,11 @@
                         Archaeologists use it to quickly produce plans of large or complex sites, and meteorologists
                         use it to determine the wind speed of tornadoes
                         when objective weather data cannot be obtained.</p>
-                    </p>
+                  
                 </div>
                 <!-- DSM service info -->
                 <div id="dsm-dtm-info-right">
-                    <p>
+                    
                     <h2>DTM (Digital Terrain Model) Service</h2>
                     <br>
                     <p>DTM (Digital Terrain Model) typically augments a DEM, by including vector features of the
@@ -183,7 +185,7 @@
                         environment,
                         A DSM is useful in 3D modeling for telecommunications, urban planning, and aviation. Because
                         objects extrude from the Earth, </p>
-                    </p>
+                
                 </div>
             </div>
 
@@ -241,17 +243,18 @@
           </div>
       
           <div class="contact-details">
-            <ul>
                 <h3><a href="#/contact.html">Contact Details</a></h3>
+                <ul>
                 <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
-                <li> <p>Contact No: +91 22 2757 1537</p></li>
+                <li> <p>Contact No: +91 22 2757 1537</p></li></ul>
                 <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
                 <li><p>Email: info@amdatalab.com</p></li>
                 </ul> -->
           </div>
         </div>
         <div class="footer_img">
-            <marquee scrollamount="10" scroll-container>
+            <div class="marquee-container">
+                <div class="marquee-1">
                 <img src="./image/footer/p1.jpg" alt="">
                 <img src="./image/footer/p2.png" alt="">
                 <img src="./image/footer/p3.webp" alt="">
@@ -260,13 +263,20 @@
                 <img src="./image/footer/p6.png" alt="">
                 <img src="./image/footer/p7.png" alt="">
                 <img src="./image/footer/p8.jpg" alt="">
-            </marquee>
+            </div>
+            </div>
         </div> 
         <div class="copyright">
           &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
         </div>
+        <div class="w3">
+            <img src="./image/f1cs.jpg" alt="">
+            <img src="./image/f2cs.png" alt="">
+            <img src="./image/f3cs.png" alt="">
+            <img src="./image/f4cs.gif" alt="">
+            </div>
 </footer>
-    </header>
+    
     <script src="./js/service.js"></script>
     <script src="./js/liveDate.js"></script>
     <script src="./js/zoomInOut.js"></script>
