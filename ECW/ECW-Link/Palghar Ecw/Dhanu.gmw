@@ -1,0 +1,189 @@
+GLOBAL_MAPPER_SCRIPT VERSION="1.00" FILENAME="C:\Users\admin\Desktop\Dhanugmw.gmw" \
+	 GM_VERSION="17.0.5" TIMESTAMP="2023-12-02T09:36:55Z"
+SET_BG_COLOR COLOR="RGB(255,255,255)"
+UNLOAD_ALL
+IMPORT FILENAME="\\AMDATALAB\MyArchive6\MAHARASHTRA COASTAL\OUTPUT\TALUKAWISE ECW\PALGHAR\DAHANU.ecw" \
+	 TYPE="ECW" LABEL_FIELD_FORCE_OVERWRITE="NO" CLIP_COLLAR="NONE" SAMPLING_METHOD="NEAREST_NEIGHBOR" \
+	 AUTO_CONTRAST="NO" CONTRAST_SHARED="YES" CONTRAST_MODE="NONE" TEXTURE_MAP="NO" TRANSLUCENCY="512"
+DEFINE_PROJ PROJ_NAME="UTM_ZONE43_WGS84"
+Projection     UTM
+Datum          WGS84
+Zunits         NO
+Units          METERS
+Zone           43
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+END_DEFINE_PROJ
+LOAD_PROJECTION PROJ_NAME="UTM_ZONE43_WGS84"
+SET_VIEW GLOBAL_BOUNDS="217049.981,2197297.011,302643.950,2227968.183"
+
+/************ DEFINE MAP LAYOUT *************/
+MAP_LAYOUT
+ElevLegendBgColor=16777215
+ElevLegendTranslucency=384
+ElevLegendFont=~0~534799372~0.000~0~0~16777215
+ElevLegendVisible=1
+ElevLegendDisplayType=1
+ElevLegendDisplayUnits=1
+ElevLegendDisplayUnitsStr=
+ElevLegendCustomRangeMin=0
+ElevLegendCustomRangeMax=0
+ElevLegendRangeType=0
+ElevLegendTitle=
+ElevLegendSlopePercent=0
+
+DEFINE_PROJ_ELEV_LEGEND
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+
+0.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+
+0.000000000 /* vert offset
+
+0.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+
+100.000000000 /* size value
+
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+
+1.000000000 /* always on top
+
+0.000000000 /* shrink to fit
+
+END_DEFINE_PROJ
+
+MapLegendType=0
+MapLegendBgColor=16776959
+MapLegendBorderStyle=0,2097152,0.0
+MapLegendTranslucency=512
+MapLegendFont=~0~534799368~0.000~0~0~16777215
+MapLegendFooterFont=~0~534799372~0.000~0~0~16777215
+MapLegendHeaderFont=~0~534799372~0.000~0~0~16777215
+MapLegendHeader=
+MapLegendFooter=
+MapLegendNumColumns=1
+MapLegendLabelAttr=
+
+DEFINE_PROJ_MAP_LEGEND
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+
+1.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+
+0.000000000 /* vert offset
+
+1.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+
+0.000000000 /* size value
+
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+
+1.000000000 /* always on top
+
+1.000000000 /* shrink to fit
+
+END_DEFINE_PROJ
+
+NorthArrowEnabled=0
+NorthArrowSymbol=
+NorthArrowSymbolScale=1.000000
+NorthArrowTranslucency=384
+
+DEFINE_PROJ_NORTH_ARROW
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+
+1.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+
+0.000000000 /* vert offset
+
+0.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+
+100.000000000 /* size value
+
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+
+1.000000000 /* always on top
+
+0.000000000 /* shrink to fit
+
+END_DEFINE_PROJ
+
+ScaleBarBgColor=16777215
+ScaleBarTranslucency=384
+ScaleBarFont=~0~534799372~0.000~0~0~16777215
+ScaleVisible=1
+
+DEFINE_PROJ_SCALE
+Projection     Fixed Screen Position
+Datum          D_ADINDAN
+Zunits         NO
+Units          RADIAN
+Xshift         0.000000
+Yshift         0.000000
+Parameters
+0.000000000 /* horz offset
+
+0.000000000 /* horz offset type (0 - left, 1 - right, 2 - center)
+
+0.000000000 /* horz offset value type (0 - inches, 1 - % width, 2 - deg lon)
+
+0.000000000 /* vert offset
+
+1.000000000 /* vert offset type (0 - top, 1 - bottom, 2 - center)
+
+0.000000000 /* vert offset value type (0 - inches, 1 - % width, 2 - deg lat)
+
+0.000000000 /* size value
+
+2.000000000 /* size value type (0 - % width, 1 - % height, 2 - pixel)
+
+1.000000000 /* always on top
+
+0.000000000 /* shrink to fit
+
+END_DEFINE_PROJ
+
+MarginLeft=0.750000
+MarginRight=0.750000
+MarginTop=0.750000
+MarginBottom=0.750000
+MarginUnits=0
+MarginEnabled=0
+MarginColor=16777215
+GridDisplayType=0
+GridDisplayShowAll=0
+GridSpacingLatLon=0.00000000000000000
+GridSpacingProjected=0.00000000000000000
+END_MAP_LAYOUT
