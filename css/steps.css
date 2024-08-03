@@ -1,0 +1,76 @@
+main {
+    width: 100%;
+    background-color:rgb(238, 246, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #008080;
+    text-align: center;
+}
+.step{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /* align-items: center;  */
+}
+.step-1{
+    /* background-color: rgba(130, 187, 168, 0.534); */
+    background-color:white;
+    width: 30%;
+    padding-top: 2%;
+    padding-left: 1%;
+    display:inline-block;
+    /* flex-direction: row; */
+    justify-content:space-between;
+    align-items: center;
+}
+.img-step-1{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-step-1 img{
+    width: 60%;
+}
+#s3-img{
+    width: 50%;
+}
+#s7-img{
+    width: 50%;
+    /* height: 40%; */
+
+}
+.img-step-1 p{
+    color: crimson;
+}
+.p-step-1 #s1{
+    background-color: rgb(132, 172, 245);
+    color: rgb(3, 3, 68);
+}
+.p-step-1 #s2{
+    background-color: rgb(223, 181, 131);
+    color: rgb(107, 81, 16);
+}
+.p-step-1 #s3{
+    background-color: rgb(206, 164, 204);
+    color: rgb(80, 3, 80);
+}
+.p-step-1 #s4{
+    background-color: rgb(162, 184, 130);
+    color: rgb(9, 59, 9);
+}
+.p-step-1 #s5{
+    background-color: rgb(250, 193, 146);
+    color: brown;
+}
+.p-step-1 #s6{
+    background-color: rgb(153, 214, 214);
+    color: rgb(5, 66, 66);
+}

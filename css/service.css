@@ -1,0 +1,281 @@
+/* css for main */
+main{
+    /* height: 85vh; */
+    height: auto;
+    width: 100%;
+    background-color:rgb(238, 246, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    height: 30%;
+      width: 50%;
+      /* background-color:rgb(235, 221, 250); */
+      text-align: center;
+  }
+.head h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #008080;
+    text-align: center;
+}
+.head p{
+    font-style: italic;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+.middle{
+    /* height: 10vh; */
+    height: auto;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    /* background-color:lightpink; */
+}
+.middle a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.middle a:hover{
+color: #03b1b1;
+}
+
+#all{
+    color: red;
+}
+.end{
+    height: auto;
+    width: 100%;
+    /* background-color:rgb(252, 252, 172); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: auto;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(231, 147, 147); */
+    justify-content:space-around;
+    align-items: center;
+}
+.box_btn{
+    height: 40px;
+    width: 100px;
+    /* background-color: #8b6767; */
+}
+.box_btn button{
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+}
+.box_btn button:hover{
+    background-color: #008080;
+    color: #fff;
+}
+.box1 {
+    flex-basis: 30%;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.box1 img {
+    /* height: 200px;width: 350px; */
+    width: 100%;height:30%;
+    display: block;
+}
+.layer {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s; /* Increased transition time for smoother animation */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.layer h3 {
+    width: 100%;
+    /* font-weight: 500; */
+    color: aliceblue;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    bottom: -50px; /* Initial position below the container */
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box1:hover .layer {
+    opacity: 1;
+}
+.layer:hover h3 {
+    opacity: 1;
+    bottom: 50%; /* Move the text to the center */
+    transform: translateY(-30%); /* Adjust to center the text vertically */
+}
+.additional-info {
+    margin: 10px;
+    width:50%;
+}
+.additional-info p{
+    /* margin-top: -20px; */
+    font-style: italic;
+    text-align: center;
+}
+.additional-info h2{
+    text-align: center;
+    color: brown;
+}
+
+
+/* mobile view ==============================================================================================================================================================================*/
+@media only screen and (min-width: 200px)and (max-width: 450px) {
+    .head{
+          width: 90%;
+      }
+    .head p{
+        font-style: italic;
+        font-size: medium; 
+    }
+    .middle{
+        height: auto;
+        padding: 10px;
+        width: 100%;
+        font-size:small;
+        /* background-color:lightpink; */
+    }
+    .middle a{
+        padding: 5px;
+    }
+    .box {
+        /* background-color: rgb(231, 147, 147); */
+        height: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }  
+ 
+    .additional-info {
+        margin: 10px;
+        width:90%;
+    }
+    .additional-info p{
+        font-style: italic;
+    }
+    
+}
+
+/* mobile view ==============================================================================================================================================================================*/
+@media only screen and (min-width: 400px)and (max-width: 600px) {
+ 
+    .head {
+        height: 30%;
+        width: 95%;
+        /* background-color:rgb(235, 221, 250); */
+        text-align: center;
+    }
+  .head p{
+      font-style: italic;
+      font-size: medium; 
+  }
+  .middle{
+      height: auto;
+      padding: 20px;
+      width: 100%;
+      font-size:medium;
+      /* background-color:lightpink; */
+  }
+.box {
+    height: auto;
+    width: 90%;
+      /* background-color: rgb(231, 147, 147); */
+}
+  .additional-info {
+      margin: 10px;
+      width:90%;
+  }
+}
+
+/* Tablet view  ========================================================================================================================================================================== */
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+
+    .head {
+        height: 30%;
+        width: 90%;
+        /* background-color:rgb(235, 221, 250); */
+        text-align: center;
+    }
+  .head p{
+      font-style: italic;
+      /* font-size: medium;  */
+  }
+  .middle{
+      height: auto;
+      padding: 20px;
+      width: 100%;
+      font-size:medium;
+      /* background-color:lightpink; */
+  }
+
+.box {
+    height: auto;
+    width: 90%;
+      /* background-color: rgb(231, 147, 147); */
+}
+  .additional-info {
+      margin: 10px;
+      width:90%;
+  }
+
+}
+
+/* Laptop view  ========================================================================================================================================================================== */
+@media only screen and (min-width: 850px) and (max-width: 1350px) {
+    .head {
+        height: 30%;
+        width: 70%;
+        /* background-color:rgb(235, 221, 250); */
+        text-align: center;
+    }
+  .head p{
+      font-style: italic;
+      /* font-size: medium;  */
+  }
+  .middle{
+      height: auto;
+      padding: 20px;
+      width: 100%;
+      font-size:medium;
+      /* background-color:lightpink; */
+  }
+
+.box {
+    height: auto;
+    width: 90%;
+      /* background-color: rgb(231, 147, 147); */
+}
+  .additional-info {
+      margin: 10px;
+      width:70%;
+  }
+    
+}
