@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device- width, initial-scale=1.0" />
+  <title>Coastline Of Maharashtra data</title>
+  <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-fullscreen/dist/leaflet.fullscreen.min.css" />
+ 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+  <script src="https://unpkg.com/leaflet-area/leaflet-area.js"></script>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Leaflet Plugins CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-fullscreen/dist/leaflet.fullscreen.min.css" />
+  <link rel="stylesheet" href="./resources/leaflet-PolylineMeasure.css" />
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-8uVTHlFcFksl62lMz+25ilJ6nNUQSwi1UNsVn0I2/26ihq8iUzZBOpEAT3tP6j3g4P4UjzI01I23skRcLh0esw=="
+    crossorigin="anonymous" />
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="./css/data.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+
+</head>
+
+<body>
+   <!-- live date and zoom in zoom out buton -->
+   <div id="zoomButtons">
+    <button onclick="zoomOut()">A-</button>
+    <button onclick="resetZoom()">A</button>
+    <button onclick="zoomIn()">A+</button>
+    |
+    <span id="liveDate"></span> 
+  </div>
+
+<!-- HEADING -->
+<header>
+    <div class="header">
+        <!-- <img src="./image/index/logo.jpg" alt=""> -->
+       <img src="./image/logo/satyamev-jayate.jpg" alt="">
+        <h1>Maharashtra <br>Coastline</h1>
+        <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+       
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav>
+    <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+    <a href="about.html" onclick="setActive(this)">About</a>
+    <a href="service.html" onclick="setActive(this)">Services</a>
+    <a href="features.html" onclick="setActive(this)">Features</a>
+    <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+    <a href="project_data.html" onclick="setActive(this)">Project</a>
+    <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+    <a href="data.html" onclick="setActive(this)">Data</a> -->
+</nav>
+<!-- <br> -->
+
+<marquee behavior="" direction="left">
+Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+villages in the coastline area of Maharashtra .
+</marquee>
+  <!-- Main Content -->
+  <div id="content-container">
+    <div class="sidebar" onclick="toggleDropdown()">
+        <span style="font-size:30px; color: #000;">&#9776;</span>
+       
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="./Palghar.html">Palghar</a>
+            <a href="./Thane.html">Thane</a>
+            <a href="./Mumbai.html">Mumbai & Mumbai Suburban</a>
+            <a href="./Raigad.html">Raigad</a>
+            <a href="./Ratnagiri.html">Ratnagiri</a>
+            <a href="./Sindhudurg.html">Sindhudurg</a>
+           
+        </div>
+    </div>
+
+    <!-- Google Earth GIF or other content goes here -->
+    <img src="./video/google earth.gif" alt="Google Earth GIF" id="earthGif">
+
+    <div id="map-container" style="display:none;"></div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="service1">
+        <h3><a href="./service.html"> Services</a></h3>
+        <ul>
+          <li><a href="#">Drone Service</a></li>
+          <li><a href="#">GIS Service</a></li>
+          <li><a href="#">DSM & DTM Service</a></li>
+          <li><a href="#">3D-Model Service</a></li>
+        </ul>
+      </div>
+  
+      <div class="features">
+        <h3><a href="./features.html">Features</a></h3>
+        <ul>
+          <li>Advanced Equipment</li>
+          <li>Team of Expert</li>
+          <li>99% accuracy</li>
+          <li>5x faster Dilivary</li>
+          <li>one to one Support</li>
+        </ul>
+      </div>
+  
+      <div class="policies">
+        <h3>Peoples and Policies</h3>
+        <ul>
+            <li><a href="./disclaimer.html">Disclaimer</a></li>
+            <!-- <li>Disclaimer</li> -->
+            <!-- <li>Who is Who</li> -->
+            <li><a href="./policy.html">Privacy Policy</a></li>
+            <!-- <li>Privacy Policy</li> -->
+            <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+            <!-- <li>GOI Web Directory</li> -->
+        </ul>
+    </div>
+    
+      <div class="planning">
+        <h3><a href="./planning.html">Planning</a></h3>
+        <ul>
+          <li><a href="#">Scheduling</a></li>
+          <li><a href="#">Planning</a></li>
+        </ul>
+      </div>
+  
+      <div class="contact-details">
+        <ul>
+          <h3><a href="#/contact.html">Contact Details</a></h3>
+        <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+        <li> <p>Contact No: +91 22 2757 1537</p></li>
+        <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+        <li><p>Email: info@amdatalab.com</p></li>
+        </ul> -->
+      </div>
+    </div>
+  
+    <div class="copyright">
+      &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
+    </div>
+</footer>
+
+  <!-- External Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="https://unpkg.com/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+<script src="https://unpkg.com/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+<script src="./resources/leaflet-PolylineMeasure.js"></script>
+<script src="./resources/leaflet-providers.js"></script>
+
+  <!-- Leaflet Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+  <script src="./resources/leaflet-PolylineMeasure.js"></script>
+
+  <!-- Turf.js for geospatial analysis -->
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+
+
+  <!-- measure plugin -->
+  <script src="./resources/leaflet-PolylineMeasure.js"></script>
+
+  <!-- leaflet providers -->
+  <script src="./resources/leaflet-providers.js"></script>
+
+  <!-- Your custom script -->
+  <script src="./js/Ratnagiri.js"></script>
+  <script src="./js/liveDate.js"></script>
+  <script src="./js/zoomInOut.js"></script>
+
+</body>
+
+</html>
