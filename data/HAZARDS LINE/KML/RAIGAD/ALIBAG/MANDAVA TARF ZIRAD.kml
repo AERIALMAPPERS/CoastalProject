@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-7"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>MANDAVA TARF ZIRAD.dwg</name>
+    <description>MANDAVA TARF ZIRAD.dwg</description>
+    <Placemark>
+      <description><![CDATA[VILLAGE NAME<BR><BR><B>ELEVATION</B> = 0]]></description>
+      <name>MANDAVA
+TARF
+ZIRAD</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.8996470949,18.7985097103,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.8975066149,18.7962529650,0
+          72.8970040859,18.7962965980,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.8969944199,18.7966316990,0
+          72.8965072119,18.7971058840,0
+          72.8962658029,18.7977933720,0
+          72.8970893719,18.7985315870,0
+          72.8978425629,18.7989024430,0
+          72.8984321699,18.7997285680,0
+          72.8986925139,18.7999098440,0
+          72.9000292439,18.7999493780,0
+          72.9009256399,18.8001826210,0
+          72.9025007369,18.8001077650,0
+          72.9022952589,18.7959540000,0
+          72.9016696389,18.7936896790,0
+          72.9013455189,18.7923408090,0
+          72.9009396979,18.7909801810,0
+          72.8993439929,18.7932432910,0
+          72.8984192509,18.7948153360,0
+          72.8979353669,18.7953150500,0
+          72.8975125809,18.7954592130,0
+          72.8975066149,18.7962529650,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description><![CDATA[0<BR><BR><B>ELEVATION</B> = 0]]></description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.8969944199,18.7966316990,0
+          72.8970040859,18.7962965980,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

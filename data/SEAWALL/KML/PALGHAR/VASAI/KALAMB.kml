@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FFFF00FF</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FF007FFF</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>KALAMB</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.762944365,19.415386972,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.772796361,19.412302329,0
+          72.770925996,19.409512403,0
+          72.770461977,19.407099463,0
+          72.770158184,19.402876914,0
+          72.768013879,19.399187026,0
+          72.767351338,19.399071156,0
+          72.764563655,19.399634431,0
+          72.762610882,19.401908724,0
+          72.762683412,19.403721039,0
+          72.762747449,19.406418207,0
+          72.762286770,19.409063469,0
+          72.761642391,19.409912125,0
+          72.761352029,19.412006039,0
+          72.761691273,19.413196728,0
+          72.761188663,19.415950726,0
+          72.760872162,19.417865489,0
+          72.761451936,19.418108466,0
+          72.761706975,19.418656467,0
+          72.760778847,19.419963611,0
+          72.759877171,19.421134548,0
+          72.758957296,19.422444120,0
+          72.761832948,19.423285517,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.762161388,19.423050650,0
+          72.762728593,19.422895486,0
+          72.763275253,19.422978375,0
+          72.763434628,19.422738764,0
+          72.764071810,19.422923053,0
+          72.765504385,19.423050855,0
+          72.765843055,19.423188072,0
+          72.767068796,19.423221021,0
+          72.769098276,19.422920716,0
+          72.769739413,19.422988648,0
+          72.770972745,19.420312385,0
+          72.771146952,19.419722687,0
+          72.770868830,19.416024036,0
+          72.772151033,19.413595211,0
+          72.772796361,19.412302329,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.761832916,19.423285540,0
+          72.762161388,19.423050650,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>SEAWALL</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.759304589,19.418601395,0
+          72.759105892,19.419143358,0
+          72.758849446,19.420153222,0
+          72.758386901,19.421706160,0
+          72.758207430,19.422131639,0
+          72.758155763,19.422311831,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>SEAWALL</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.761044373,19.406984645,0
+          72.761151536,19.406641919,0
+          72.761279035,19.406019020,0
+          72.761401162,19.405331942,0
+          72.761457889,19.404852544,0
+          72.761572910,19.404234346,0
+          72.761706429,19.403148664,0
+          72.761697593,19.402161909,0
+          72.761712328,19.401083493,0
+          72.761724408,19.399806425,0
+          72.761669372,19.398316656,0
+          72.761657697,19.396928425,0
+          72.761818395,19.396086340,0
+          72.762003174,19.395609002,0
+          72.762254860,19.395077950,0
+          72.762736250,19.394507775,0
+          72.763184051,19.394059279,0
+          72.763497781,19.393783318,0
+          72.763750098,19.393645340,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

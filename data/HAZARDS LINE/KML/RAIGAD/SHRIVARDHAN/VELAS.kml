@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="iso-8859-7"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FF0000FF</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+  </Style>
+  <Folder>
+    <name>VELAS.dwg</name>
+    <description>VELAS.dwg</description>
+    <Placemark>
+      <description><![CDATA[ddddd<BR><BR><B>ELEVATION</B> = 0]]></description>
+      <name>VELAS</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.9850389528,18.2106820712,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>VILLAGE BOUNDRY</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9982639999,18.2215980000,0
+          72.9963379999,18.2182270000,0
+          72.9956409999,18.2169400000,0
+          72.9942309999,18.2137320000,0
+          72.9938879999,18.2099950000,0
+          72.9936649999,18.2085530000,0
+          72.9930319999,18.2053680000,0
+          72.9920669999,18.2054360000,0
+          72.9897819999,18.2042690000,0
+          72.9886339999,18.2037810000,0
+          72.9872589999,18.2027740000,0
+          72.9867879999,18.2025140000,0
+          72.9857689999,18.2014330000,0
+          72.9850589999,18.2019180000,0
+          72.9831449999,18.2027480000,0
+          72.9824219999,18.2030090000,0
+          72.9814659999,18.2032320000,0
+          72.9813909999,18.2036630000,0
+          72.9815599999,18.2039710000,0
+          72.9826909999,18.2045350000,0
+          72.9836539999,18.2054020000,0
+          72.9839589999,18.2060870000,0
+          72.9844299999,18.2066520000,0
+          72.9842089999,18.2068050000,0
+          72.9839829999,18.2076080000,0
+          72.9836759999,18.2079840000,0
+          72.9836329999,18.2102410000,0
+          72.9829539999,18.2114120000,0
+          72.9827609999,18.2126480000,0
+          72.9827179999,18.2133720000,0
+          72.9815759999,18.2142240000,0
+          72.9812099999,18.2144350000,0
+          72.9803399999,18.2151750000,0
+          72.9799499999,18.2152490000,0
+          72.9790169999,18.2152370000,0
+          72.9777819999,18.2160490000,0
+          72.9775449999,18.2167190000,0
+          72.9771009999,18.2171900000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>VILLAGE BOUNDRY</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9769329999,18.2175820000,0
+          72.9769609999,18.2184520000,0
+          72.9792819999,18.2188910000,0
+          72.9812219999,18.2191990000,0
+          72.9815279999,18.2191990000,0
+          72.9852059999,18.2195730000,0
+          72.9862889999,18.2194070000,0
+          72.9919049999,18.2194710000,0
+          72.9937399999,18.2194400000,0
+          72.9970839999,18.2211270000,0
+          72.9979339999,18.2217780000,0
+          72.9982639999,18.2215980000,0
+          72.9982639999,18.2215980000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description><![CDATA[0<BR><BR><B>ELEVATION</B> = 0]]></description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9769329999,18.2175820000,0
+          72.9771009999,18.2171900000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description><![CDATA[HAZARDS LINE<BR><BR><B>ELEVATION</B> = 0]]></description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9853901372,18.2016918013,0
+          72.9853556002,18.2019867101,0
+          72.9853173364,18.2024571232,0
+          72.9853173052,18.2024933111,0
+          72.9852794155,18.2025294691,0
+          72.9852414954,18.2026018151,0
+          72.9848626337,18.2029272070,0
+          72.9846351711,18.2032889068,0
+          72.9845213769,18.2035421320,0
+          72.9844833304,18.2037592293,0
+          72.9844832675,18.2038316051,0
+          72.9844454088,18.2038315750,0
+          72.9844453773,18.2038677629,0
+          72.9838395833,18.2039396567,0
+          72.9835366544,18.2040117907,0
+          72.9825520227,18.2043728802,0
+          72.9824348168,18.2044072491,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="area1">
+    <LineStyle>
+      <color>FFFF0000</color>
+      <width>1</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>BF000000</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+  </Style>
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Style id="point2">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ffffffff</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>KOLMANDALE</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.9067493943,18.5013790897,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <description>PORT TEXT</description>
+      <name>BORLI MANDLA
+PORT</name>
+      <styleUrl>#point2</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.9092064646,18.5043683387,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Area Features</name>
+    <description>Area Features</description>
+    <Placemark>
+      <description>PORT</description>
+      <styleUrl>#area1</styleUrl>
+      <Polygon>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <extrude>1</extrude>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              72.9106426786,18.5046145595,0
+              72.9104162689,18.5041558750,0
+              72.9103020600,18.5042042966,0
+              72.9101303346,18.5038767835,0
+              72.9102285393,18.5038396692,0
+              72.9101195911,18.5035741330,0
+              72.9100991821,18.5035401058,0
+              72.9100768154,18.5035200998,0
+              72.9100511995,18.5035096390,0
+              72.9096284188,18.5034150515,0
+              72.9096397120,18.5033642812,0
+              72.9100643803,18.5034545946,0
+              72.9100950412,18.5034639146,0
+              72.9101199638,18.5034797565,0
+              72.9101416952,18.5035003553,0
+              72.9101638661,18.5035359256,0
+              72.9102746770,18.5038106240,0
+              72.9104976615,18.5037326215,0
+              72.9106576854,18.5040530553,0
+              72.9107162568,18.5040287985,0
+              72.9107770593,18.5041511250,0
+              72.9109760494,18.5040632790,0
+              72.9109966334,18.5041056543,0
+              72.9108471331,18.5041720139,0
+              72.9109449132,18.5043934117,0
+              72.9111225524,18.5043264036,0
+              72.9111459080,18.5043889276,0
+              72.9109537003,18.5044734936,0
+              72.9109693340,18.5045120389,0
+              72.9106426786,18.5046145595,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9049919369,18.5002175030,0
+          72.9057930709,18.5026667250,0
+          72.9072113199,18.5033203990,0
+          72.9092887069,18.5023724620,0
+          72.9112505859,18.5025548640,0
+          72.9107617899,18.5034737200,0
+          72.9109639359,18.5037061800,0
+          72.9119532989,18.5051898980,0
+          72.9124038689,18.5060465050,0
+          72.9122905979,18.5063286550,0
+          72.9133246129,18.5077241720,0
+          72.9143946239,18.5085571930,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9147378699,18.5083192180,0
+          72.9152087239,18.5084239290,0
+          72.9173047149,18.5082416390,0
+          72.9173884059,18.5083024560,0
+          72.9179365749,18.5073527810,0
+          72.9188724229,18.5058770000,0
+          72.9201492339,18.5039939310,0
+          72.9188264839,18.5031334800,0
+          72.9181376249,18.5034307840,0
+          72.9177045979,18.5031792240,0
+          72.9175028829,18.5026310010,0
+          72.9181229709,18.5024093410,0
+          72.9178686109,18.5019579370,0
+          72.9177060229,18.5013144340,0
+          72.9172947879,18.5013604680,0
+          72.9169469539,18.5008595880,0
+          72.9169286519,18.4997929400,0
+          72.9168187339,18.4990011730,0
+          72.9163773749,18.4988887850,0
+          72.9160321069,18.4985036960,0
+          72.9163159199,18.4978243990,0
+          72.9135332159,18.4974247400,0
+          72.9112056109,18.4971517950,0
+          72.9049893319,18.4984486460,0
+          72.9049919369,18.5002175030,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.9143946239,18.5085571930,0
+          72.9147378699,18.5083192180,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
