@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FFFF0000</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>KONDIVALI</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.989461660,18.106430339,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.988006692,18.102581802,0
+          72.986904647,18.102851798,0
+          72.985634743,18.102935037,0
+          72.985442910,18.102824252,0
+          72.983928641,18.103368736,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.984109380,18.103528736,0
+          72.984736759,18.104999042,0
+          72.984591347,18.107807026,0
+          72.985316374,18.109553469,0
+          72.985545501,18.110623156,0
+          72.987773905,18.113422677,0
+          72.988288876,18.114017727,0
+          72.990583943,18.115519695,0
+          72.991670780,18.116623004,0
+          72.992156432,18.117288504,0
+          72.992559835,18.117607487,0
+          72.992713098,18.117392758,0
+          72.994131738,18.115795269,0
+          72.996112832,18.114218787,0
+          72.997458920,18.113669635,0
+          72.998272618,18.113416979,0
+          72.998432240,18.113276166,0
+          73.000222966,18.110523289,0
+          73.001076963,18.108728596,0
+          73.002061230,18.107425006,0
+          73.002534275,18.106985986,0
+          73.001977825,18.106534399,0
+          73.001548777,18.105568767,0
+          73.001032729,18.104031386,0
+          73.000956111,18.102903088,0
+          73.000662077,18.102099670,0
+          72.999749051,18.100506793,0
+          72.999231842,18.099866318,0
+          72.999139574,18.098541180,0
+          72.998408428,18.096989966,0
+          72.997671876,18.095828957,0
+          72.996975293,18.095418465,0
+          72.996612523,18.094596206,0
+          72.996023557,18.094621814,0
+          72.995954724,18.095365050,0
+          72.995680529,18.095506381,0
+          72.994593055,18.096787611,0
+          72.994547318,18.097159423,0
+          72.993796597,18.097873836,0
+          72.992710592,18.097386355,0
+          72.993170174,18.096462563,0
+          72.993190859,18.096122709,0
+          72.994238522,18.092590555,0
+          72.993281303,18.092311557,0
+          72.993108858,18.092418909,0
+          72.992243366,18.095131066,0
+          72.991267741,18.097044626,0
+          72.990903489,18.097833741,0
+          72.989546276,18.100411862,0
+          72.987819317,18.102001141,0
+          72.988006692,18.102581802,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.983928637,18.103368730,0
+          72.984109366,18.103528745,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>LOW TIDE LINE</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.991409051,18.090931358,0
+          72.990952426,18.092699714,0
+          72.990914604,18.092735749,0
+          72.990461174,18.092951532,0
+          72.989252023,18.093526949,0
+          72.989063055,18.093634910,0
+          72.987967218,18.094174425,0
+          72.987514082,18.094245775,0
+          72.985588290,18.094530950,0
+          72.985474968,18.094566839,0
+          72.985399471,18.094566694,0
+          72.985248324,18.094638617,0
+          72.983887544,18.095502556,0
+          72.982942449,18.096150649,0
+          72.982450873,18.096546869,0
+          72.981581725,18.096978463,0
+          72.980863569,18.097410346,0
+          72.980447714,18.097698388,0
+          72.979351674,18.098310061,0
+          72.978216951,18.099354926,0
+          72.978027894,18.099498981,0
+          72.977914491,18.099570972,0
+          72.977196318,18.100002839,0
+          72.976402951,18.100290130,0
+          72.976383533,18.100542835,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

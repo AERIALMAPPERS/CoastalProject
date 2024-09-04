@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FF0000FF</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>GUNGAWADA</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.6842957789,19.9467895024,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.6920650438,19.9533756400,0
+          72.6887467198,19.9541919150,0
+          72.6885234988,19.9540270030,0
+          72.6876645098,19.9519103760,0
+          72.6867101268,19.9490601830,0
+          72.6869908408,19.9468284560,0
+          72.6844169598,19.9453719050,0
+          72.6844517948,19.9429835830,0
+          72.6840568498,19.9433551460,0
+          72.6831247738,19.9432053930,0
+          72.6825878778,19.9436382660,0
+          72.6840679948,19.9459933500,0
+          72.6847145258,19.9474865950,0
+          72.6860353508,19.9506758990,0
+          72.6878191148,19.9547795740,0
+          72.6883812528,19.9556402970,0
+          72.6891384478,19.9557946780,0
+          72.6905706428,19.9550204270,0
+          72.6928360528,19.9535362190,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.6920650438,19.9533756400,0
+          72.6887467198,19.9541919150,0
+          72.6885234988,19.9540270030,0
+          72.6876645098,19.9519103760,0
+          72.6867101268,19.9490601830,0
+          72.6869908408,19.9468284560,0
+          72.6844169598,19.9453719050,0
+          72.6844517948,19.9429835830,0
+          72.6840568498,19.9433551460,0
+          72.6831247738,19.9432053930,0
+          72.6825878778,19.9436382660,0
+          72.6840679948,19.9459933500,0
+          72.6847145258,19.9474865950,0
+          72.6860353508,19.9506758990,0
+          72.6878191148,19.9547795740,0
+          72.6883812528,19.9556402970,0
+          72.6891384478,19.9557946780,0
+          72.6905706428,19.9550204270,0
+          72.6928360528,19.9535362190,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.6928360528,19.9535362190,0
+          72.6920650438,19.9533756400,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>ARTIFICIALLY PROTECTED</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.6882553187,19.9558792644,0
+          72.6882501270,19.9558696679,0
+          72.6880132311,19.9553735266,0
+          72.6877950521,19.9547847570,0
+          72.6877877579,19.9547690591,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

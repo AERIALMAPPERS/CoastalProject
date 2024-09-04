@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FFFF0000</color>
+      <width>1</width>
+    </LineStyle>
+    <IconStyle><Icon></Icon></IconStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>BHARADKHED</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>72.980136885,18.137324361,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.989731905,18.141990942,0
+          72.989275749,18.138570059,0
+          72.989019916,18.137408079,0
+          72.988119631,18.135612119,0
+          72.986808763,18.133536851,0
+          72.985487321,18.131877697,0
+          72.983304552,18.129308530,0
+          72.983150373,18.129374269,0
+          72.980049933,18.131609283,0
+          72.979689801,18.133186818,0
+          72.978983012,18.134329731,0
+          72.978180699,18.134601354,0
+          72.978032562,18.134767777,0
+          72.977846580,18.135237073,0
+          72.979217977,18.136250913,0
+          72.979421814,18.136056864,0
+          72.980896952,18.136273997,0
+          72.981442824,18.136995225,0
+          72.981879737,18.138200867,0
+          72.981867895,18.138651625,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.982186920,18.138940324,0
+          72.982255171,18.139335035,0
+          72.981816434,18.140300373,0
+          72.982633716,18.141781294,0
+          72.982886886,18.142088430,0
+          72.984394187,18.141607173,0
+          72.985871151,18.141928981,0
+          72.987615975,18.142076505,0
+          72.989731905,18.141990942,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.981867886,18.138651656,0
+          72.982187059,18.138940462,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>LOW TIDE LINE</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          72.975466419,18.137625846,0
+          72.977008076,18.138144497,0
+          72.977348418,18.138434271,0
+          72.978784960,18.140208622,0
+          72.979047781,18.142633428,0
+          72.978884280,18.143520855,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FFFF7F00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>ANANTWADI</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>73.3545403363,16.6242853808,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>UNPROTECTED DUE TO CREEK</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.3499011573,16.6227678914,0
+          73.3507551557,16.6223315422,0
+          73.3512877896,16.6219344399,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.3647888270,16.6253096770,0
+          73.3645490320,16.6249937320,0
+          73.3639169690,16.6248600810,0
+          73.3629647780,16.6240217210,0
+          73.3629811200,16.6236070030,0
+          73.3626531900,16.6232467210,0
+          73.3616968350,16.6229762930,0
+          73.3613874960,16.6226444740,0
+          73.3608535960,16.6227081030,0
+          73.3606015530,16.6226006720,0
+          73.3601225190,16.6217484140,0
+          73.3596516550,16.6213719690,0
+          73.3591834350,16.6208122770,0
+          73.3592860830,16.6204707300,0
+          73.3587698740,16.6202809920,0
+          73.3574354620,16.6200936650,0
+          73.3560542960,16.6193129530,0
+          73.3552031630,16.6186790630,0
+          73.3548015050,16.6202311800,0
+          73.3538034600,16.6221829100,0
+          73.3534220570,16.6231257740,0
+          73.3526289980,16.6238538350,0
+          73.3551392360,16.6257776320,0
+          73.3561520810,16.6263704370,0
+          73.3591083550,16.6279829310,0
+          73.3611462170,16.6290098470,0
+          73.3629164150,16.6267254080,0
+          73.3631387040,16.6263711030,0
+          73.3627638580,16.6255531010,0
+          73.3632839060,16.6246253480,0
+          73.3635582520,16.6249564270,0
+          73.3640024850,16.6251692320,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.3644720560,16.6251183320,0
+          73.3647888270,16.6253096770,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.3640024850,16.6251692320,0
+          73.3644720560,16.6251183320,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

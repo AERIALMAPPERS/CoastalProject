@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+  <!-- Begin Style Definitions -->
+  <Style id="line1">
+    <LineStyle>
+      <color>FFFF7F00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="line2">
+    <LineStyle>
+      <color>FF00FF00</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="point1">
+    <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
+    <LabelStyle><color>ff333333</color></LabelStyle>
+  </Style>
+  <Folder>
+    <name>Point Features</name>
+    <description>Point Features</description>
+    <Placemark>
+      <description>VILLAGE NAME</description>
+      <name>GHARATWADI
+TARF VELDUR</name>
+      <styleUrl>#point1</styleUrl>
+      <Point>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <coordinates>73.1692877579,17.5627181412,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Line Features</name>
+    <description>Line Features</description>
+    <Placemark>
+      <description>UNPROTECTED DUE TO CREEK</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.1662033801,17.5792947895,0
+          73.1661674720,17.5791697576,0
+          73.1652209309,17.5777880390,0
+          73.1649901006,17.5775224631,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.1643150000,17.5792190000,0
+          73.1670310000,17.5793280000,0
+          73.1705070000,17.5793290000,0
+          73.1713360000,17.5795630000,0
+          73.1712400000,17.5742080000,0
+          73.1727240000,17.5743320000,0
+          73.1743470000,17.5743740000,0
+          73.1743860000,17.5729850000,0
+          73.1743240000,17.5724460000,0
+          73.1744050000,17.5717620000,0
+          73.1747980000,17.5711580000,0
+          73.1750330000,17.5710020000,0
+          73.1752680000,17.5704150000,0
+          73.1754660000,17.5694870000,0
+          73.1756960000,17.5692190000,0
+          73.1767410000,17.5685430000,0
+          73.1782640000,17.5681570000,0
+          73.1781600000,17.5680860000,0
+          73.1769550000,17.5659690000,0
+          73.1774680000,17.5660150000,0
+          73.1788480000,17.5631190000,0
+          73.1787170000,17.5610760000,0
+          73.1786100000,17.5607880000,0
+          73.1784940000,17.5590810000,0
+          73.1783190000,17.5590650000,0
+          73.1781980000,17.5581830000,0
+          73.1785170000,17.5581980000,0
+          73.1785940000,17.5573750000,0
+          73.1795240000,17.5568570000,0
+          73.1805280000,17.5570530000,0
+          73.1809890000,17.5568370000,0
+          73.1804270000,17.5558720000,0
+          73.1799100000,17.5522060000,0
+          73.1796910000,17.5504440000,0
+          73.1788110000,17.5506660000,0
+          73.1783630000,17.5510730000,0
+          73.1777990000,17.5511910000,0
+          73.1776710000,17.5498860000,0
+          73.1785440000,17.5493760000,0
+          73.1784160000,17.5491260000,0
+          73.1778860000,17.5492730000,0
+          73.1782370000,17.5480420000,0
+          73.1788810000,17.5467610000,0
+          73.1799620000,17.5461590000,0
+          73.1821560000,17.5447530000,0
+          73.1816940000,17.5431130000,0
+          73.1823860000,17.5428760000,0
+          73.1825120000,17.5425210000,0
+          73.1798530000,17.5426240000,0
+          73.1767830000,17.5430380000,0
+          73.1743360000,17.5430330000,0
+          73.1727370000,17.5433280000,0
+          73.1710210000,17.5435080000,0
+          73.1685980000,17.5446270000,0
+          73.1683550000,17.5449940000,0
+          73.1674380000,17.5467920000,0
+          73.1670910000,17.5491700000,0
+          73.1669160000,17.5508620000,0
+          73.1672230000,17.5538620000,0
+          73.1672140000,17.5546160000,0
+          73.1670030000,17.5563230000,0
+          73.1670830000,17.5569130000,0
+          73.1670130000,17.5575500000,0
+          73.1670370000,17.5593060000,0
+          73.1672610000,17.5611220000,0
+          73.1676740000,17.5626260000,0
+          73.1671680000,17.5655590000,0
+          73.1669270000,17.5662530000,0
+          73.1667400000,17.5680400000,0
+          73.1662820000,17.5705300000,0
+          73.1661150000,17.5719000000,0
+          73.1653660000,17.5767880000,0
+          73.1654750000,17.5768600000,0
+          73.1638610000,17.5790650000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>village</description>
+      <styleUrl>#line2</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.1638610000,17.5790650000,0
+          73.1643150000,17.5792190000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
