@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Coastline Of Maharashtra</title>
+    <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+    <!-- <link rel="stylesheet" href="./css/project.css" /> -->
+<link rel="stylesheet" href="./css/project_data.css">
+<link rel="stylesheet" href="./css/styles.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-fullscreen/dist/leaflet.fullscreen.min.css" >
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" >
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+    <script src="https://unpkg.com/leaflet-area/leaflet-area.js"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" >
+
+    <!-- Leaflet Plugins CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-fullscreen/dist/leaflet.fullscreen.min.css" >
+    <link rel="stylesheet" href="./resources/leaflet-PolylineMeasure.css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-8uVTHlFcFksl62lMz+25ilJ6nNUQSwi1UNsVn0I2/26ihq8iUzZBOpEAT3tP6j3g4P4UjzI01I23skRcLh0esw=="
+        crossorigin="anonymous" >
+</head>
+<!-- <style>
+    .text-label {
+        font-size: 12px;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        padding: 2px;
+        border-radius: 3px;
+        text-align: center;
+    }
+</style> -->
+
+<body>
+     <!-- live date and zoom in zoom out buton -->
+     <div id="zoomButtons">
+      <button onclick="zoomOut()">A-</button>
+      <button onclick="resetZoom()">A</button>
+      <button onclick="zoomIn()">A+</button>
+      |
+      <span id="liveDate"></span> 
+    </div>
+
+  <!-- HEADING -->
+  <header>
+      <div class="header">
+          <!-- <img src="./image/index/logo.jpg" alt=""> -->
+         <img src="./image/logo/satyamev-jayate.jpg" alt="">
+          <h1>Maharashtra <br>Coastline</h1>
+          <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+         
+      </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+      <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+      <a href="about.html" onclick="setActive(this)">About</a>
+      <a href="service.html" onclick="setActive(this)">Services</a>
+      <a href="features.html" onclick="setActive(this)">Features</a>
+      <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+      <a href="project_data.html" onclick="setActive(this)">Project</a>
+      <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+      <a href="data.html" onclick="setActive(this)">Data</a> -->
+  </nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
+     <!-- Main Content -->
+     <main>
+        <div id="maplist">
+            <div id="district_list">
+                <br>
+                <h2>Coastline of Maharashtra</h2>
+                <br>
+                <!-- Village list -->
+                <form id="villageSelector">
+                    <select id="district">
+                        <option value="" disabled selected>Select District</option>
+                    </select>
+                    <select id="taluka">
+                        <option value="" disabled selected>Select Taluka</option>
+                    </select>
+                    <select id="village">
+                        <option value="" disabled selected>Select Village</option>
+                    </select>
+                    <button id="ShowButton">Show</button>
+                    <button id="downloadButton">download</button>
+                  
+                </form>
+            </div>
+            <div id="label">
+
+                <h2>Layer</h2>
+                <form  method="post" id="labelForm">
+                    <!-- Checkbox labels -->
+                    <label>
+                        <input type="checkbox" name="checkbox1">Chainage</label>
+                    <label>
+                        <input type="checkbox" name="checkbox2">Ecw
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox3"> Dtm
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox4">Dsm
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox5"> Contour Map
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox6">TopoPlan
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox7"> Village Map
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox8">Artifically Protected Coastline</label>
+                    <label>
+                        <input type="checkbox" name="checkbox8">Naturally Protected Coastline
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox8"> Unprotected Coastline
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox11">vurnalable Coastline
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox12"> High Tide Line
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox13">Low Tide Line
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox14">Bund</label>
+                    <label>
+                        <input type="checkbox" name="checkbox15">seawall
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="checkbox16">Port/Harbour
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox17">Hazard Line
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox18">Sand Dane
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox19">Ecosensative zone</label>
+                    <label>
+                        <input type="checkbox" name="checkbox20">Mangrove Buffer Zone
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox21">DGPS Control Point
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox22">Piller Location
+                    </label>
+                    <label>
+                        <input type="checkbox" name="checkbox23">Year wise Coastline
+                    </label>
+                </form>
+            </div>
+        </div>
+        <!-- <br><br><br> -->
+        <div class="map-main">
+            <!-- Google Earth GIF or other content goes here -->
+            <!-- Google Earth GIF or other content goes here -->
+            <!-- <img src="./video/google earth.gif" alt="Google Earth GIF" id="earthGif"> -->
+            <div id="map-container"></div>
+        </div>
+    </main>
+  <br>
+  <!-- External Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="https://unpkg.com/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="https://unpkg.com/leaflet-fullscreen/dist/Leaflet.fullscreen.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+  <script src="./resources/leaflet-PolylineMeasure.js"></script>
+  <script src="./resources/leaflet-providers.js"></script>
+
+  <!-- Leaflet Plugins -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.2/leaflet.draw.js"></script>
+  <script src="./resources/leaflet-PolylineMeasure.js"></script>
+
+  <!-- Turf.js for geospatial analysis -->
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+
+
+  <!-- measure plugin -->
+  <script src="./resources/leaflet-PolylineMeasure.js"></script>
+
+  <!-- leaflet providers -->
+  <script src="./resources/leaflet-providers.js"></script>
+  
+  <script src="https://unpkg.com/leaflet-omnivore@0.3.4/leaflet-omnivore.min.js"></script>
+
+
+
+  <!-- Custom Script -->
+  <!-- <script src="./js/data.js"></script> -->
+  <script src="./js/liveDate.js"></script>
+  <script src="./js/zoomInOut.js"></script>
+  <!-- <script src="./js/kml_plugin.js"></script> -->
+  <script src="./js/kml.js"></script>
+  <!-- <script src="./js/Pro.js"></script> -->
+  <!-- <script src="./js/project.js"></script> -->
+  <!-- <script src="./js/pr.js"></script> -->
+
+<!-- <a href="./data/VillageMapKml/Ratnagiri/Guhaghar/MarutiMandirWadi.kml"></a> -->
+<!-- <a href="./data/CHAINAGE/PAGHAR/Dahanu/BORDI.dwg"></a> -->
+
+<!-- <a href="./data/VILLAGE MAP/VILLAGE MAP KML/Sidhudurg/Vengurla/Karli.kml"></a> -->
+
+
+    <footer>
+      <div class="footer-container">
+        <div class="service1">
+          <h3><a href="./service.html"> Services</a></h3>
+          <ul>
+            <li><a href="#">Drone Service</a></li>
+            <li><a href="#">GIS Service</a></li>
+            <li><a href="#">DSM & DTM Service</a></li>
+            <li><a href="#">3D-Model Service</a></li>
+          </ul>
+        </div>
+    
+        <div class="features">
+          <h3><a href="./features.html">Features</a></h3>
+          <ul>
+            <li>Advanced Equipment</li>
+            <li>Team of Expert</li>
+            <li>99% accuracy</li>
+            <li>5x faster Dilivary</li>
+            <li>one to one Support</li>
+          </ul>
+        </div>
+
+        <div class="policies">
+          <h3>Peoples and Policies</h3>
+          <ul>
+              <li><a href="./disclaimer.html">Disclaimer</a></li>
+              <!-- <li>Disclaimer</li> -->
+              <!-- <li>Who is Who</li> -->
+              <li><a href="./policy.html">Privacy Policy</a></li>
+              <!-- <li>Privacy Policy</li> -->
+              <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+              <!-- <li>GOI Web Directory</li> -->
+          </ul>
+      </div>
+    
+        <div class="planning">
+          <h3><a href="./planning.html">Planning</a></h3>
+          <ul>
+            <li><a href="#">Scheduling</a></li>
+            <li><a href="#">Planning</a></li>
+          </ul>
+        </div>
+    
+        <div class="contact-details">
+          
+            <h3><a href="#/contact.html">Contact Details</a></h3>
+            <ul>
+            <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+            <li> <p>Contact No: +91 22 2757 1537</p></li>
+            </ul>
+            <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+            <li><p>Email: info@amdatalab.com</p></li>
+            </ul> -->
+        </div>
+      </div>
+      <div class="footer_img">
+        <div class="marquee-container">
+            <div class="marquee-1">
+            <img src="./image/footer/p1.jpg" alt="">
+            <img src="./image/footer/p2.png" alt="">
+            <img src="./image/footer/p3.webp" alt="">
+            <img src="./image/footer/p4.png" alt="">
+            <img src="./image/footer/p5.jpg" alt="">
+            <img src="./image/footer/p6.png" alt="">
+            <img src="./image/footer/p7.png" alt="">
+            <img src="./image/footer/p8.jpg" alt="">
+       </div>
+       </div>
+    </div> 
+      <div class="copyright">
+        &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
+      </div><div class="w3">
+        <img src="./image/f1cs.jpg" alt="">
+        <img src="./image/f2cs.png" alt="">
+        <img src="./image/f3cs.png" alt="">
+        <img src="./image//f4cs.gif" alt="">
+        </div>
+
+<!-- <a href="./data/kmz/JALANA.kml"></a> -->
+</footer>
+   
+</body> 
+</html>
+
+

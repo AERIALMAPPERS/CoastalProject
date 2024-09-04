@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Coastline Of Maharashtra</title>
+  <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+  <link rel="stylesheet" href="./css/features.css" >
+<link rel="stylesheet" href="./css/styles.css" >
+
+</head>
+
+<body>
+   <!-- live date and zoom in zoom out buton -->
+   <div id="zoomButtons">
+    <button onclick="zoomOut()">A-</button>
+        <button onclick="resetZoom()">A</button>
+        <button onclick="zoomIn()">A+</button>
+    |
+    <span id="liveDate"></span> 
+    <div id="google_translate_element"></div>
+  </div>
+
+<!-- HEADING -->
+<header>
+    <div class="header">
+        <!-- <img src="./image/index/logo.jpg" alt=""> -->
+       <img src="./image/logo/satyamev-jayate.jpg" alt="">
+        <h1>Maharashtra <br>Coastline</h1>
+        <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+       
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav>
+    <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+    <a href="about.html" onclick="setActive(this)">About</a>
+    <a href="service.html" onclick="setActive(this)">Services</a>
+    <a href="features.html" onclick="setActive(this)">Features</a>
+    <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+    <a href="project_data.html" onclick="setActive(this)">Project</a>
+    <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+    <a href="data.html" onclick="setActive(this)">Data</a> -->
+</nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+  <div class="marquee">
+Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+villages in the coastline area of Maharashtra .
+</div>
+</div>
+  <main><br> <br>
+    <h1> FEATURES</h1>
+    <div class="box">
+      <div class="features1" >
+        <div class="f0">
+          <div class="f2">
+            <img
+              src="https://img.icons8.com/external-others-pike-picture/50/1A1A1A/external-device-gadget-and-device-others-pike-picture-22.png"
+              alt="external-device-gadget-and-device-others-pike-picture-22" >
+          </div>
+          <h2> 10x Faster Data <br>Acquisition</h2>
+        </div>
+        <div class="f1">
+          <p>Our team of skilled drone pilots,
+            equipped with high-precision drones,
+            allows us to acquire aerial data 10 times
+            more rapidly than our industry counterparts....</p>
+        </div>
+      </div>
+
+      <div class="features2" >
+        <div  class="f0">
+          <div class="f2">
+            <img src="https://img.icons8.com/wired/64/data-in-both-directions.png" alt="data-in-both-directions">
+          </div>
+          <h2> 5x Faster <br>Delivery</h2>
+        </div>
+        <div class="f1">
+          <p>We have team of GIS experts working
+            around clock to process and analyse
+            the Drone survey data to deliver on
+            or before time....</p>
+        </div>
+      </div>
+      <div class="features3" >
+        <div  class="f0">
+          <div class="f2">
+            <img src="https://img.icons8.com/ios/50/1A1A1A/accuracy--v1.png" alt="accuracy--v1">
+          </div>
+          <h2> 99% Accurate <br>Measurement</h2>
+        </div>
+        <div class="f1">
+          <p> We deliver results with up to 99% of accuracy.
+            We use Machine Learning to process data
+            for better accuracy in yield estimation, volumetric measurements, etc...
+          </p>
+        </div>
+      </div>
+
+      <div class="features4" >
+        <div  class="f0">
+          <div class="f2">
+            <img src="https://img.icons8.com/glyph-neue/64/conference-call.png" alt="conference-call">
+          </div>
+          <h2> Team of <br>Experts</h2>
+        </div>
+        <div class="f1">
+          <p> Our team of highly experienced GIS Engineer Drone
+            Pilots and Software Engineers working around the clock
+            to provide you with the best possible service experience...
+          </p>
+        </div>
+      </div>
+
+
+      <div class="features5" >
+        <div  class="f0">
+          <div class="f2">
+            <img
+              src="https://img.icons8.com/external-outline-berkahicon/64/external-drone-linely-palm-industry-outline-berkahicon.png"
+              alt="external-drone-linely-palm-industry-outline-berkahicon">
+          </div>
+          <h2>Advance <br>Equipment</h2>
+        </div>
+        <div class="f1">
+          <p> Our surveying Drones are high-end and equipped with high resolution sensors
+            for superior data quality We use both DJI and Custom made drones for surveying...</p>
+        </div>
+      </div>
+      
+      <div class="features6" >
+        <div  class="f0">
+          <div class="f2">
+            <img
+              src="https://img.icons8.com/external-becris-lineal-becris/64/external-meeting-business-management-becris-lineal-becris.png"
+              alt="external-meeting-business-management-becris-lineal-becris">
+          </div>
+          <h2> One to One <br>Support </h2>
+        </div>
+        <div class="f1">
+          <p> From start to finish of project,we provide
+            all possible support to our clients and
+            help them in better decision making with
+            Survey data...</p>
+        </div>
+
+      </div>
+
+    </div><br>
+  </main>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="service1">
+        <h3><a href="./service.html"> Services</a></h3>
+        <ul>
+          <li><a href="#">Drone Service</a></li>
+          <li><a href="#">GIS Service</a></li>
+          <li><a href="#">DSM & DTM Service</a></li>
+          <li><a href="#">3D-Model Service</a></li>
+        </ul>
+      </div>
+  
+      <div class="features">
+        <h3><a href="./features.html">Features</a></h3>
+        <ul>
+          <li>Advanced Equipment</li>
+          <li>Team of Expert</li>
+          <li>99% accuracy</li>
+          <li>5x faster Dilivary</li>
+          <li>one to one Support</li>
+        </ul>
+      </div>
+
+      <div class="policies">
+        <h3>Peoples and Policies</h3>
+        <ul>
+            <li><a href="./disclaimer.html">Disclaimer</a></li>
+            <!-- <li>Disclaimer</li> -->
+            <!-- <li>Who is Who</li> -->
+            <li><a href="./policy.html">Privacy Policy</a></li>
+            <!-- <li>Privacy Policy</li> -->
+            <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+            <!-- <li>GOI Web Directory</li> -->
+        </ul>
+    </div>
+  
+      <div class="planning">
+        <h3><a href="./planning.html">Planning</a></h3>
+        <ul>
+          <li><a href="#">Scheduling</a></li>
+          <li><a href="#">Planning</a></li>
+        </ul>
+      </div>
+
+      
+  
+      <div class="contact-details">
+       
+          <h3><a href="#/contact.html">Contact Details</a></h3>
+          <ul>
+          <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+          <li> <p>Contact No: +91 22 2757 1537</p></li>
+          <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+          <li><p>Email: info@amdatalab.com</p></li>-->
+          </ul> 
+      </div>
+    </div>
+    <div class="footer_img">
+      <div class="marquee-container">
+        <div class="marquee-1">
+          <img src="./image/footer/p1.jpg" alt="">
+          <img src="./image/footer/p2.png" alt="">
+          <img src="./image/footer/p3.webp" alt="">
+          <img src="./image/footer/p4.png" alt="">
+          <img src="./image/footer/p5.jpg" alt="">
+          <img src="./image/footer/p6.png" alt="">
+          <img src="./image/footer/p7.png" alt="">
+          <img src="./image/footer/p8.jpg" alt="">
+     </div>
+     </div>
+    </div>
+    <div class="copyright">
+      &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai  | All rights reserved.
+    </div>
+    <div class="w3">
+      <img src="./image/f1cs.jpg" alt="">
+      <img src="./image/f2cs.png" alt="">
+      <img src="./image/f3cs.png" alt="">
+      <img src="./image/f4cs.gif" alt="">
+      </div>
+
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </footer>
+  <!-- Java Script -->
+  <script src="./js/index.js"></script>
+
+  <!-- </header> -->
+  <script src="./js/index.js"></script>
+  <script src="./js/liveDate.js"></script>
+  <script src="./js/zoomInOut.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastline Of Maharashtra</title>
+    <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+    <link rel="stylesheet" href="./css/contact.css" />
+<link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+     <!-- live date and zoom in zoom out buton -->
+     <div id="zoomButtons">
+        <button onclick="zoomOut()">A-</button>
+        <button onclick="resetZoom()">A</button>
+        <button onclick="zoomIn()">A+</button>
+        |
+        <span id="liveDate"></span> 
+        <div id="google_translate_element"></div>
+      </div>
+
+    <!-- HEADING -->
+    <header>
+        <div class="header">
+            <!-- <img src="./image/index/logo.jpg" alt=""> -->
+           <img src="./image/logo/satyamev-jayate.jpg" alt="">
+            <h1>Maharashtra <br>Coastline</h1>
+            <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+           
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+        <a href="about.html" onclick="setActive(this)">About</a>
+        <a href="service.html" onclick="setActive(this)">Services</a>
+        <a href="features.html" onclick="setActive(this)">Features</a>
+        <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+        <a href="project_data.html" onclick="setActive(this)">Project</a>
+        <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+        <a href="data.html" onclick="setActive(this)">Data</a> -->
+    </nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
+    <main>
+        <!-- <h1>CONTACT-US</h1> -->
+        <br>
+        <div class="head">
+            <h1>CONTACT-US</h1>
+        </div>
+
+        <div class="end">
+            <div class="box">
+                <div class="box1">
+                    <div id="innerBox2">
+                        <h2>Call Us</h2><br><br>
+                        <h4>Mob-No: +91 8767554332</h4><br>
+                        <h4>Office-No: +123456789</h4>
+                    </div>
+
+                    <div id="innerBox1">
+                        <img src="https://img.icons8.com/material-sharp/24/FFFFFF/phone.png" alt="phone" />
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div id="innerBox2">
+                        <h2>Visit Us Here</h2><br>
+                        <h4>1st Floor, Amrapali Apartments,
+                         Paud Road, Right, Bhusari Colony, Kothrud,Pune,
+
+                        Maharashtra 411038</h4>
+                    </div>
+
+                    <div id="innerBox1">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/visit.png" alt="visit" />
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div id="innerBox2">
+                        <h2>Mail Us</h2><br><br>
+                        <h4><a href="mailto:contact@example.com">info@amdatalab.com</a></h4>
+                    </div>
+
+                    <div id="innerBox1">
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/message-squared.png"
+                            alt="message-squared" />
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div id="innerBox2">
+                        <h2>Open-Hours</h2> <br><br>
+                        <h4>Monday-Saturday:</h4><br>
+                        <h4>9.30 AM - 6.30 PM</h4>
+                    </div>
+
+                    <div id="innerBox1">
+                        <img src="https://img.icons8.com/ios/50/FFFFFF/clock--v1.png" alt="clock--v1" />
+                    </div>
+                </div>
+
+                <div class="box1" id="social">
+                    <div id="innerBox2" class="innerBox2">
+                        <h2>Connect with Us</h2>
+
+                        <img src="https://img.icons8.com/color/48/facebook.png" alt="facebook" id="clickableImage"
+                            onclick="facebookLink()" />
+                        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp--v1"
+                            id="clickableImage" onclick="whatsappLink()" />
+                        <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" id="clickableImage"
+                            onclick="linkedinLink()" /><br><br>
+                        <img src="https://img.icons8.com/fluency/48/twitter-squared.png" alt="twitter-squared"
+                            id="clickableImage" onclick="twitterLink()" />
+                        <img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"
+                            id="clickableImage" onclick="instagramLink()" />
+                    </div>
+
+                    <div id="innerBox1">
+                        <img src="https://img.icons8.com/hatch/64/FFFFFF/web-globe.png" alt="web-globe" />
+                    </div>
+                </div>
+
+            </div>
+
+            <br><br>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4210486127126!2d73.78767691120628!3d18.509865669427608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb708c70673%3A0xecae52d275882ffb!2sAM%20DATA%20LAB%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1701864581032!5m2!1sen!2sin"
+                    style="border:1px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <br><br>
+    </main>
+    
+    
+    <footer>
+        
+        <div class="footer-container">
+          <div class="service1">
+            <h3><a href="./service.html"> Services</a></h3>
+            <ul>
+              <li><a href="#">Drone Service</a></li>
+              <li><a href="#">GIS Service</a></li>
+              <li><a href="#">DSM & DTM Service</a></li>
+              <li><a href="#">3D-Model Service</a></li>
+            </ul>
+          </div>
+      
+          <div class="features">
+            <h3><a href="./features.html">Features</a></h3>
+            <ul>
+              <li>Advanced Equipment</li>
+              <li>Team of Expert</li>
+              <li>99% accuracy</li>
+              <li>5x faster Dilivary</li>
+              <li>one to one Support</li>
+            </ul>
+          </div>
+      
+          <div class="policies">
+            <h3>Peoples and Policies</h3>
+            <ul>
+                <li><a href="./disclaimer.html">Disclaimer</a></li>
+                <!-- <li>Disclaimer</li> -->
+                <!-- <li>Who is Who</li> -->
+                <li><a href="./policy.html">Privacy Policy</a></li>
+                <!-- <li>Privacy Policy</li> -->
+                <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+                <!-- <li>GOI Web Directory</li> -->
+            </ul>
+        </div>
+        
+          <div class="planning">
+            <h3><a href="./planning.html">Planning</a></h3>
+            <ul>
+              <li><a href="#">Scheduling</a></li>
+              <li><a href="#">Planning</a></li>
+            </ul>
+          </div>
+      
+          <div class="contact-details">
+                <h3><a href="#/contact.html">Contact Details</a></h3>
+                <ul>
+                <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+                <li> <p>Contact No: +91 22 2757 1537</p></li>
+                </ul>
+            <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+            <li><p>Email: info@amdatalab.com</p></li>
+            </ul> -->
+          </div>
+        </div>
+        <!-- <div class="f-container">
+            <a href="">Terms and condition</a>
+           | 
+            <a href="">Website Policies</a>
+           |
+            <a href="">Accesibility Statement</a>
+           |
+            <a href="">Download</a>
+           |
+            <a href="">FAQ</a>
+           |
+           <a href="">Help</a>
+           |
+           <a href="">Disclaimer</a>
+           |
+           <a href="">Map</a>
+           |
+           <a href="">Feedback</a>
+           |
+           <a href="">Scheme</a>
+           |
+           <a href="">Service</a>
+           |
+           <a href="">Notification</a>
+           |
+           <a href="">Archive</a>
+   
+           </div><br> -->
+           <div class="footer_img">
+            <div class="marquee-container">
+                <div class="marquee-1">
+                <img src="./image/footer/p1.jpg" alt="">
+                <img src="./image/footer/p2.png" alt="">
+                <img src="./image/footer/p3.webp" alt="">
+                <img src="./image/footer/p4.png" alt="">
+                <img src="./image/footer/p5.jpg" alt="">
+                <img src="./image/footer/p6.png" alt="">
+                <img src="./image/footer/p7.png" alt="">
+                <img src="./image/footer/p8.jpg" alt="">
+            </div>
+            </div>
+        </div> 
+        <div class="copyright">
+          &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai  | All rights reserved.
+        </div>
+        <div class="w3">
+            <img src="./image/f1cs.jpg" alt="">
+            <img src="./image/f2cs.png" alt="">
+            <img src="./image/f3cs.png" alt="">
+            <img src="./image/f4cs.gif" alt="">
+            </div>
+         <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
+         <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   </footer>
+    <script src="./js/contact.js"></script>
+    <script src="./js/liveDate.js"></script>
+    <script src="./js/zoomInOut.js"></script>
+</body>
+
+</html>

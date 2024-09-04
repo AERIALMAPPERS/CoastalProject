@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Coastline Of Maharashtra</title>
+    <link rel="icon" type="image/png" href="./image/logo/favicon.png"><link rel="stylesheet" href="./css/index.css">
+    <link rel="manifest" href="./json/manifest.json">
+    <link rel="stylesheet" href="./css/styles.css" >
+
+</head>
+<body>
+   <!-- live date and zoom in zoom out buton -->
+    <div id="zoomButtons">
+        <button onclick="zoomOut()">A-</button>
+            <button onclick="resetZoom()">A</button>
+            <button onclick="zoomIn()">A+</button>
+        |
+        <span id="liveDate"></span> 
+        <div id="google_translate_element"></div>
+      </div>
+
+    <!-- HEADING -->
+    <header>
+        <div class="header">
+            <!-- <img src="./image/index/logo.jpg" alt=""> -->
+           <img src="./image/logo/satyamev-jayate.jpg" alt="">
+            <h1>Maharashtra <br>Coastline</h1>
+            <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+           
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+        <a href="about.html" onclick="setActive(this)">About</a>
+        <a href="service.html" onclick="setActive(this)">Services</a>
+        <a href="features.html" onclick="setActive(this)">Features</a>
+        <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+        <a href="project_data.html" onclick="setActive(this)">Project</a>
+        <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+        <a href="data.html" onclick="setActive(this)">Data</a> -->
+    </nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+    <div class="marquee">
+    Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+    download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+    villages in the coastline area of Maharashtra .
+</div>
+</div>
+
+    <!-- banner -->
+    <div class="banner">
+
+        <div class="mySlides">
+            <img src="./image/banner/Banner1.png" alt="Image 1">
+        </div>
+        <div class="mySlides">
+            <img src="./image/banner/Banner2.jpg" alt="Image 2" id="img2">
+        </div>
+        <div class="mySlides">
+            <img src="./image/banner/Banner3.png" alt="Image 1">
+        </div>
+        <div class="mySlides">
+            <img src="./image/banner/Banner4.jpg" alt="Image 2" id="img3">
+        </div>
+        <div class="mySlides">
+            <img src="./image/banner/Banner5.png" alt="Image 2" id="img4">
+        </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+        <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    </div>
+
+    <!-- main -->
+    <main>
+    
+ <!-- Navbar -->
+ <!-- <nav id="nav1">
+    <a href="#index.html" onclick="setActive(this)" class="active">Events</a>
+    <a href="#about.html" onclick="setActive(this)">Video</a>
+    <a href="#gallery.html" onclick="setActive(this)">Photo</a>
+</nav> -->
+    <!-- Services -->
+    <div class="service">
+        <br>
+        <div class="head">
+            <h1>SERVICES</h1>
+            <hr >
+            <br>
+            <p>Map’s the first need of the beginning of any project from small construction work to big
+                mining and infrastructure project.
+                A geographic information system (GIS) is a system that creates, manages, analyzes, and maps
+                all types of data. GIS connects data to a map, <br>
+                Following services are used in project... <br>
+                1. Drone Service<br>
+                2. Gis Service <br>
+                3. DSM & STM Service <br>
+                4. 3-D Model <br>
+            </p>
+        </div>
+
+        <div class="end">
+            <div class="box">
+                <div class="campus">
+                    <img src="./image/service/Drone1.jpg" alt="" id="img1-1">
+                    <div class="layer">
+                        <h3> Drone</h3>
+                    </div>
+                </div>
+                <div class="campus">
+                    <img src="./image/service/drone2.jpg" alt="" id="img1-2">
+                    <div class="layer">
+                        <h3> Drone</h3>
+                    </div>
+                </div>
+                <div class="campus">
+                    <img src="./image/service/GIS.jpg" alt="" id="img2-1">
+                    <div class="layer">
+                        <h3>Gis</h3>
+                    </div>
+                </div>
+                <div class="campus">
+                    <img src="./image/service/GIS1.png " alt="" id="img2-2">
+                    <div class="layer">
+                        <h3>Gis</h3>
+                    </div>
+                </div>
+                <div class="campus">
+                    <img src="./image/service/DSM.jpg" alt="" id="img3-1">
+                    <div class="layer">
+                        <h3>DSM & DTM</h3>
+                    </div>
+                </div>
+                <div class="campus">
+                    <img src="./image/service/3-D.png" alt="" id="img4-1">
+                    <div class="layer">
+                        <h3>3-D Model</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box_btn">
+            <button id="load-more" onclick="showService()">LOAD MORE</button>
+        </div>
+    
+    </div>
+
+<!-- section part -->
+
+<section class="section">
+    <!-- <h1>service feature</h1> -->
+    <br>
+    <div class="section_container">
+        <div class="gallery_container" id="left_container">
+            <div class="left_video">
+                <!-- box1 -->
+                <!-- <h4>Video Gallery</h4> -->
+                <!-- <source src="../img/Coastal Video.mp4" type="video/mp4"> -->
+                <video autoplay muted>
+                    <source src="./img/CoastalVideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="left_gallery">
+                <!-- <h4>Image gallery</h6> -->
+
+                    <!-- Features -->
+                    <div class="Features">
+                    <!-- <br> -->
+                        <h2>FEATURES</h2>
+                        <!-- <hr> -->
+                        <div class="end">
+                            <div class="box1">
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/external-others-pike-picture/50/1A1A1A/external-device-gadget-and-device-others-pike-picture-22.png"
+                                        alt="external-device-gadget-and-device-others-pike-picture-22" id="img-1" >
+                                    <h3 id="heading1"> 10x faster Data Acqution</h3>
+                                </div>
+
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/wired/64/data-in-both-directions.png"
+                                        alt="data-in-both-directions" id="img-2" >
+                                    <h3 id="heading2"> 5x faster Dilivary</h3>
+                                </div>
+
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/ios/50/1A1A1A/accuracy--v1.png"
+                                        alt="accuracy--v1" id="img-3" >
+                                    <h3 id="heading3">99 % accurate Measurement</h3>
+                                </div>
+
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/glyph-neue/64/conference-call.png"
+                                        alt="conference-call" id="img-4" >
+                                    <h3 id="heading4">Team of Expert</h3>
+                                </div>
+
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/external-outline-berkahicon/64/external-drone-linely-palm-industry-outline-berkahicon.png"
+                                        alt="external-drone-linely-palm-industry-outline-berkahicon" id="img-5" >
+                                    <h3 id="heading5">Advances Equipment</h3>
+                                </div>
+
+                                <div class="innerBox1">
+                                    <img src="https://img.icons8.com/external-becris-lineal-becris/64/external-meeting-business-management-becris-lineal-becris.png"
+                                        alt="external-meeting-business-management-becris-lineal-becris" id="img-6" >
+                                    <h3 id="heading6">One to one Support</h3>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box_btn">
+                            <button id="load-more1" onclick="showFeatures()">LOAD MORE</button>
+                        </div>
+
+                    </div>
+
+                    <!-- box2 -->
+            </div>
+        </div>
+        <div class="map_container" id="right_container">
+            <!-- <div class="gallery"> -->
+            <!-- box3 -->
+            <!-- <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.4210486127126!2d73.78767691120628!3d18.509865669427608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb708c70673%3A0xecae52d275882ffb!2sAM%20DATA%20LAB%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1701864581032!5m2!1sen!2sin"
+                style="border:1;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <!-- </div> -->
+            <div class="right_image">
+                <!-- <img src="../img/mapMaharashtraB.jpg" alt=""> -->
+                <img src="./img/mapMaharashtraB.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- end section part -->
+    <!-- steps -->
+    <div class="steps">
+        <h1>STEPS </h1>
+        
+        <br>
+   
+        <div class="inner-div">
+            
+            <div class="inner-img">
+                <img src="./image/steps/Methodology.png" alt="">
+            </div>
+            <div class="inner-step">
+
+                <div class="innerBox2">
+                    <h3 id="heading1-1"> Step : I</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/clouds/100/google-earth.png" alt="google-earth" id="img-i1">
+                    <br>
+                    <h5> Identification of coastline using google earth.</h5>
+                    <br>
+                    <h5 class="readMore1" id="read-more-step-1" onclick="showStep1()">Read More...</h5>
+                </div>
+    
+                <div class="innerBox2">
+                    <h3 id="heading2-1"> Step : II</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-benchmark-influencer-marketing-flaticons-lineal-color-flat-icons-2.png" alt="external-benchmark-influencer-marketing-flaticons-lineal-color-flat-icons-2"
+                        id="img-i2" >
+                    <br>
+                    <h5>Establishment of benchmark for drone survey.</h5>
+                    <br>
+                    <h5 class="readMore2" id="read-more-step-2" onclick="showStep2()">Read More...</h5>
+                </div>
+    
+                <div class="innerBox2">
+                    <h3 id="heading3-1">Step : III</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/nolan/64/drone.png" alt="drone" id="img-i3" >
+                    <br>
+                    <h5>Drone lidar survey.(collect elevation information)</h5>
+                    <br>
+                    <h5 class="readMore3" id="read-more-step-3" onclick="showStep3()">Read More...</h5>
+                </div>
+    
+                <div class="innerBox2">
+                    <h3 id="heading4-1">Step : IV</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-output-automation-technology-flaticons-flat-circular-flat-icons.png" alt="external-output-automation-technology-flaticons-flat-circular-flat-icons" id="img-i4" >
+                    <br>
+                    <h5>Generation of drone survey output.</h5>
+                    <br>
+                    <h5 class="readMore4" id="read-more-step-4" onclick="showStep4()">Read More...</h5>
+                </div>
+    
+                <div class="innerBox2">
+                    <h3 id="heading5-1">Step : V</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/clouds/100/address.png" alt="address" id="img-i5" >
+                        <br>
+                    <h5>Geo-referencing of the village map.</h5>
+                    <br>
+                    <h5 class="readMore5" id="read-more-step-5" onclick="showStep5()">Read More...</h5>
+                </div>
+    
+                <div class="innerBox2">
+                    <h3 id="heading6-1">Step : VI</h3>
+                    <img width="100" height="100" src="https://img.icons8.com/dusk/64/ms-excel.png" alt="ms-excel" id="img-i6" >
+                        <br>
+                    <h5>Identification of the coastline(village-wise).</h5>
+                    <br>
+                    <h5 class="readMore6" id="read-more-step-6" onclick="showStep6()">Read More...</h5>
+                </div>
+                
+                    <div class="innerBox2">
+                        <h3 id="heading1-2">Step : VII</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/plasticine/100/area-chart.png" alt="area-chart" id="img-i1.1" >
+                            <br>
+                        <h5> Rectification of the coastline as per the notified area.</h5>
+                        <br>
+                        <h5 class="readMore1" id="read-more-step-7" onclick="showStep7()">Read More...</h5>
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading2-2"> Step : VIII</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/arcade/64/sea-waves.png" alt="sea-waves" id="img-i2.1" >
+                        <br>
+                        <h5>Chainage the entire coastline.</h5>
+                        <br>
+                        <h5 class="readMore2" id="read-more-step-8" onclick="showStep8()">Read More...</h5>    
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading3-2">Step : IX</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/cute-clipart/64/kilometer-stone.png" alt="kilometer-stone" id="img-i3.1" >
+                        <br>
+                        <h5>Physical KM stone marking as per given dimension.</h5>
+                        <br>
+                        <h5 class="readMore3" id="read-more-step-9" onclick="showStep9()">Read More...</h5>   
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading4-2">Step : X</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/bubbles/100/image.png" alt="image" id="img-i4.1" >
+                        <br>
+                        <h5> Super imposition of the historical data collected from a satellite image.</h5>
+                        <br>
+                        <h5 class="readMore4" id="read-more-step-10" onclick="showStep10()">Read More...</h5>
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading5-2">Step : XI</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/external-outline-berkahicon/64/external-drone-linely-palm-industry-outline-berkahicon.png"
+                            alt="external-drone-linely-palm-industry-outline-berkahicon" id="img-i5.1" >
+                            <br>
+                        <h5> Statement of changes against the current situation of the coastline.</h5>
+                        <br>
+                        <h5 class="readMore5" id="read-more-step-11" onclick="showStep11()">Read More...</h5>
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading6-2">Step :XII</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/stitch/100/road--v1.png" alt="road--v1" id="img-i6.1" >
+                            <br>
+                        <h5>Identification of Hazards in the coastal.</h5>
+                        <br>
+                        <h5 class="readMore6" id="read-more-step-12" onclick="showStep12()">Read More...</h5>
+                    </div>
+
+                    <div class="innerBox2">
+                        <h3 id="heading1-3">Step : XIII</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/external-filled-outline-design-circle/64/external-Webpages-web-design-and-development-filled-outline-design-circle-2.png" 
+                        alt="external-Webpages-web-design-and-development-filled-outline-design-circle-2" id="img-i1.2" >
+                            <br>
+                        <h5> Development of a web-based portal for easy access to all stakeholders with mobile app development.</h5>
+                        <br>
+                        <h5 class="readMore1" id="read-more-step-13" onclick="showStep13()">Read More...</h5>
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading2-3"> Step : XIV</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/external-anggara-flat-anggara-putra/64/external-group-basic-user-interface-anggara-flat-anggara-putra.png"
+                         alt="external-group-basic-user-interface-anggara-flat-anggara-putra" id="img-i4.2" >
+                            <br>
+                        <h5> Development of the office infrastructures for staff training the data update.</h5>
+                        <br>
+                        <h5 class="readMore2" id="read-more-step-14" onclick="showStep14()">Read More...</h5>    
+                    </div>
+    
+                    <div class="innerBox2">
+                        <h3 id="heading3-3">Step : XV</h3>
+                        <img width="100" height="100" src="https://img.icons8.com/plasticine/100/report-card.png" alt="report-card" id="img-i3.2" >
+                        <br>
+                        <h5>Making the Proposal and getting CRZ Clearance for Anti Sea Erosion Measures for the State of Maharashtra.</h5>
+                        <br>
+                        <h5 class="readMore3" id="read-more-step-15" onclick="showStep15()">Read More...</h5>   
+                    </div>
+
+
+                    <!-- read more for step 1 -->
+                <div class="overlay-s1" id="overlay-s1"></div>
+                <div class="popup-container-s1" id="popupContainer-s1">
+                    <h3>STEP 1:</h3>
+                    <h4 id="s-1">
+                        Identification of coastline using google earth.(Ref for aerial
+                        survey).
+                    </h4>
+                    <br><br>
+                    <p>
+                        1.To get a rough idea about the coastline for survey. <br>
+                        2.Tentative planning for drone survey.<br>
+                        3.Google Earth is freely available for geospatial data for basic
+                        planning for drone survey.<br>
+                        4.See the large-scale data.
+                    </p>
+                    <br>
+                    <img src="./image/steps/step1.png" alt="">
+                    <!-- <img src="./img/step1.png" alt="" /> -->
+                    <br>
+                    <p id="p-1.1">REDLINE SHOW THE COASTLINE.</p>
+                    <br>
+                    <p><button onclick="hide1()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 2 -->
+                <div class="overlay-s1" id="overlay-s2"></div>
+                <div class="popup-container-s1" id="popupContainer-s2">
+                    <h3>STEP 2:</h3>
+                    <h4 id="s-2">Establishment of benchmark for drone survey.</h4>
+                    <br>
+                    <p>
+                        1.Benchmark establishment for aerial drone mapping flights is
+                        essential to ensure horizontal (X, Y) <br>
+                        vertical(Z) accuracy. <br>
+                        2.To maintain the relative accuracy of drone survey. <br>
+                        3.Establishment of benchmark play an important role in
+                        verification. <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step2.png" alt="" ><br>
+                    <p id="p-1.2">BENCHMARK FOR DRONE SURVEY.</p>
+                    <br>
+                    <img src="./image/steps/step2-2.png" alt="" >
+                    <p id="p-1.3">DGPS</p>
+                    <br>
+                    <p><button onclick="hide2()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 3 -->
+                <div class="overlay-s1" id="overlay-s3"></div>
+                <div class="popup-container-s1" id="popupContainer-s3">
+                    <h3>STEP 3:</h3>
+                    <h4 id="s-3">Establishment of benchmark for drone survey.</h4>
+                    <br><br>
+                    <p>
+                        A. Drone lidar technology is play an important role in
+                        inaccessible coastal areas. <br>
+                        B. In places like forests and hills where the trees are dense,
+                        normal mapping equipment can have a difficult time determining
+                        elevation, but not lidar. You can use it in even a densely covered
+                        area to collect elevation information. <br><br>
+
+                        1.Lidar Is An Optical Remote-sensing Technology That Can Measure
+                        The Distance To, Or Other Properties Of, Targets By Illuminating
+                        The Target With Laser Light And Analyzing The Backscattered
+                        Light.<br>
+                        2.A LIDAR system uses a laser, a GPS and an IMU to estimate the
+                        heights of objects on the ground. Discrete LiDAR data are
+                        generated from waveforms -- each point represents peak energy
+                        points along the returned energy. Discrete LiDAR points contain an
+                        X, Y and Z value.<br>
+                        3.LIDAR point cloud data is a collection of points that describe a
+                        surface or an object. Each point is described with x, y, and z
+                        coordinates and in some cases is associated with additional
+                        attributes such as a classification of the point. LIDAR data is
+                        used to extract accurate geo-referenced vector features such as
+                        buildings, roads, and trees. <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step3.png" alt="" >
+                    <p id="p-1.4">FLYING DRONE</p>
+                    <br>
+                    <p><button onclick="hide3()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 4 -->
+                <div class="overlay-s1" id="overlay-s4"></div>
+                <div class="popup-container-s1" id="popupContainer-s4">
+                    <h3>STEP 4:</h3>
+                    <br><br>
+                    <h4 id="s-4">Generation of drone survey output.</h4>
+                    <br><br>
+                    <p>
+                        In drone survey we get the raw data from drone this raw data in
+                        the form of LAS and data can be <br>
+                        calibrate in highly advance software. after the calibration
+                        process rectification data can be done <br>
+                        we get deliverable data like ortho mosaic, DTM (Digital Terrain
+                        Model) and DSM (Digital Surface Model). <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step4.png" alt="" ><br>
+                    <p id="p-1.5">DRONE SURVEY OUTPUT .</p>
+                    <br>
+                    <p><button onclick="hide4()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 5 -->
+                <div class="overlay-s1" id="overlay-s5"></div>
+                <div class="popup-container-s1" id="popupContainer-s5">
+                    <h3>STEP 5:</h3>
+                    <br><br>
+                    <h4 id="s-5">Geo-referencing of the village map.</h4>
+                    <br><br>
+                    <p>
+                        Georeferencing means that the internal coordinate system of a
+                        digital map or aerial photo can be <br>
+                        related to a ground system of geographic coordinates. A
+                        georeferenced digital map or image has been <br>
+                        tied to a known Earth coordinate system, so users can determine
+                        where every point on the map or aerial <br>
+                        photo is located on the Earth's surface. <br><br>
+                        1.allows the integration of spatial data from different sources.
+                        It allows for the use of data for a variety <br>
+                        of purposes such as analysis, planning, decision making and
+                        documenting among others. <br><br>
+                        2.Georeferencing also makes it possible to have standardization in
+                        the spatial data by allowing it to be <br>
+                        compatible to any software used in GIS without causing
+                        difficulties. <br><br>
+                        3.Georeferencing also enables the geographic information system to
+                        easily incorporate data from different <br>
+                        sources including satellite images and maps into a single
+                        database. <br><br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step5.png" alt="" ><br>
+                    <p id="p-1.6">GEO-REFERENCED VILLAGE MAP.</p>
+                    <br>
+                    <p><button onclick="hide5()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 6 -->
+                <div class="overlay-s1" id="overlay-s6"></div>
+                <div class="popup-container-s1" id="popupContainer-s6">
+                    <h3>STEP 6:</h3>
+                    <br><br>
+                    <h4 id="s-6">
+                        Identification of the
+                        coastline.district-wise,taluka-wise,village-wise
+                    </h4>
+                    <br><br>
+                    <p>
+                        1.The government all ready notified the coastline of Maharashtra
+                        this coastline can classify district-wise. <br>
+
+                        2.Maharashtra has 720km of coastline this coastline is divided
+                        into Six districts. <br>
+
+                        3.District-wise classification is helpful for finding vulnerable
+                        area or hazards area. <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step6.png" alt="" ><br>
+                    <p id="p-1.7">COASTLINE REGION.</p>
+                    <br>
+                    <p><button onclick="hide6()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 7 -->
+                <div class="overlay-s1" id="overlay-s7"></div>
+                <div class="popup-container-s1" id="popupContainer-s7">
+                    <h3>STEP 7:</h3>
+                    <h4 id="s-i1">
+                        Rectification of the coastline as per the notified area.
+                    </h4>
+                    <br>
+                    <p>
+                        1.The coastline paradox of a landmass has no defined length.
+                        Depending on the scale used, <br>
+                        the coastline may be larger or smaller. <br>
+                        2.Rectification of coastline concerning the drone image. The red
+                        line marked on google earth <br>
+                        the line does not match the drone image. The coastline can rectify
+                        with respect to the drone image. <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step7-1.png" alt="" ><br>
+                    <p id="p-1.8">GOOGLE EARTH MAP.</p>
+                    <br>
+                    <img src="./image/steps/step7-2.png" alt="" ><br>
+                    <p id="p-1.9">DRONE IMAGE.</p>
+                    <br>
+                    <p><button onclick="hide7()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 8 -->
+                <div class="overlay-s1" id="overlay-s8"></div>
+                <div class="popup-container-s1" id="popupContainer-s8">
+                    <h3>STEP 8:</h3>
+                    <br><br>
+                    <h4 id="s-i2">Chainage the entire coastline.</h4>
+                    <br><br>
+                    <p>
+                        1.Chainage is the horizontal distance as measured along a
+                        combination of curves <br>
+                        and straight lines (curvilinear) between two points. This term is
+                        usually used in <br>
+                        conjunction with route surveying along the survey control line of
+                        right-of-way maps. <br>
+                        It is often referred to as Stationing. The chainage can be done by
+                        rectifying the coastline. <br><br>
+                        2.Chainage can fix the reference for the coastline.
+                    </p>
+                    <br>
+                    <img src="./image/steps/step8.png" alt="" ><br><br>
+                    <p id="p-1.10">CHAINAGE IN COASTLINE.</p>
+                    <br>
+                    <p><button onclick="hide8()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 9 -->
+                <div class="overlay-s1" id="overlay-s9"></div>
+                <div class="popup-container-s1" id="popupContainer-s9">
+                    <h3>STEP 9:</h3>
+                    <br>
+                    <h4 id="s-i3">Physical KM stone marking as per given dimension.</h4>
+                    <br><br>
+                    <p>
+                        1.Fixing the kilometer stone as per the dimension concerning the
+                        rectified coastline. <br>
+                        2.Coastline changing continuously km stone fixes the coastline.
+                        <br>
+                        3.Find the change of shoreline rate in future. <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/step9.png" alt="" id="img9" >
+                    <p id="p-1.11">KILOMETER STONE.</p>
+                    <br>
+                    <p><button onclick="hide9()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 10 -->
+                <div class="overlay-s1" id="overlay-s10"></div>
+                <div class="popup-container-s1" id="popupContainer-s10">
+                    <h3>STEP 10:</h3>
+                    <br>
+                    <h4 id="s-i4">
+                        Super imposition of the historical data collected from a satellite
+                        image.
+                    </h4>
+                    <br><br>
+                    <p>
+                        1.Historical data superimposed with drone images can we get the
+                        changes in coastal shoreline we can find the vulnerable area from
+                        historical data and show the vulnerable area on a map. <br>
+                        2.Using historical data we can find changes in shoreline rate.
+                    </p>
+                    <br>
+                    <img src="./image/steps/step-10.1.jpg" alt="" ><br>
+                    <img src="./image/steps/step-10.2.png" alt="" ><br>
+                    <p id="p-1.12">
+                        THERE ARE TWO MAPS ONE IS 2000 AND OTHER IS 2021 COMPARISON
+                        BETWEEN THE TWO MAPS THERE ARE CHANGES IN THE SHORELINE.
+                    </p>
+                    <br>
+                    <p><button onclick="hide10()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 11 -->
+                <div class="overlay-s1" id="overlay-s11"></div>
+                <div class="popup-container-s1" id="popupContainer-s11">
+                    <h3>STEP 11:</h3>
+                    <br><br>
+                    <h4 id="s-i5">
+                        Statement of changes against the current situation of the coastline.
+                    </h4>
+                    <br><br>
+                    <p>
+                        1.To get a rough idea about the coastline for survey. <br>
+                        2.Tentative planning for drone survey.<br>
+                        3.Google Earth is freely available for geospatial data for basic
+                        planning for drone survey.<br>
+                        4.See the large-scale data.
+                    </p>
+                    <br>
+                    <!-- <img src="./image/steps/step1.png" alt="" /><br> -->
+                    <!-- <p id="p1">REDLINE SHOW THE COASTLINE.</p> -->
+                    <br>
+                    <p><button onclick="hide11()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 12 -->
+                <div class="overlay-s1" id="overlay-s12"></div>
+                <div class="popup-container-s1" id="popupContainer-s12">
+                    <h3>STEP 12:</h3>
+                    <br><br>
+                    <h4 id="s-i6">Identification of Hazards in the coastal.</h4>
+                    <br><br>
+                    <p>
+                        Identify areas in the coastal environment that are potentially
+                        affected by coastal hazards (including tsunamis), giving priority
+                        to the identification of areas at high risk of being affected.
+                        Hazard risks, over at least 100 years.
+                    </p>
+                    <br>
+                    <img src="./image/steps/step12.png" alt="" ><br>
+                    <p id="p-1.13">IDENTIFY HAZARDS IN THE COASTAL ENVIRONMENT.</p>
+                    <br>
+                    <p><button onclick="hide12()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 13 -->
+                <div class="overlay-s1" id="overlay-s13"></div>
+                <div class="popup-container-s1" id="popupContainer-s13">
+                    <h3>STEP 13:</h3>
+                    <h4 id="s-i7">
+                        Development of a web-based portal for easy access to all
+                        stakeholders with mobile app development.
+                    </h4>
+                    <br><br>
+                    <p>
+                        Develop a web based portal to store, analyze, monitor and share
+                        collected data. The captured Orth mosaic images, Digital Surface
+                        Model / Digital Elevation Model, Digitized images and
+                        vulnerability map will be stored in the developed web portal. The
+                        information will be stored with a grid size of 5 sq. Km and 20 sq.
+                        km or can be stored village, taluka and district-wise.
+                        <br>
+                    </p>
+                    <br>
+                    <img src="./image/steps/home.png" alt="">
+                    <p id="p-1.14">WEBSITE HOME PAGE</p>
+                    <br>
+                    <p><button onclick="hide13()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 14 -->
+                <div class="overlay-s1" id="overlay-s14"></div>
+                <div class="popup-container-s1" id="popupContainer-s14">
+                    <h3>STEP 14:</h3>
+                    <h4 id="s-i8">
+                        Development of the office infrastructures for <br>
+                        staff training the data update.
+                    </h4>
+                    <br><br>
+                    <p>
+                        we will provide training regarding the software we used in the
+                        <br>
+                        overall project. and developed the proper environment for the
+                        <br>
+                        staff of PWD.<br>
+                    </p>
+                    <br>
+                    <!-- <img src="../img/step3.png" alt="">
+                            <p id="p1"> FLYING DRONE
+                            </p><br> -->
+                    <p><button onclick="hide14()" class="close1">Close</button></p>
+                </div>
+                <!-- read more for step 15 -->
+                <div class="overlay-s1" id="overlay-s15"></div>
+                <div class="popup-container-s1" id="popupContainer-s15">
+                    <h3>STEP 15:</h3>
+                    <h4 id="s-i9">
+                        Making the Proposal and getting CRZ Clearance for <br>Anti Sea
+                        Erosion Measures for the State of Maharashtra.
+                    </h4>
+                    <br><br>
+                    <p>
+                        The current CRZ notification of MoEF dated 18 January 2019 has
+                        prescribed <br>
+                        erosion control measures as permissible activities vide section
+                        5.1.2 (i) (d) <br>
+                        and has laid down guidelines vide section 7 (ii) for procuring CRZ
+                        clearance <br>
+                        for permissible activities which directs Project Proponent to seek
+                        clearance <br>
+                        from State CZMA, which further directs Project Proponent to MoEF &
+                        CC with <br>
+                        recommendations & conditions<br>
+                    </p>
+                    <br>
+                    <!-- <img src="../img/step3.png" alt="">
+                            <p id="p1"> FLYING DRONE
+                            </p><br> -->
+                    <p><button onclick="hide15()" class="close1">Close</button></p>
+                </div>
+            </div> 
+        </div>
+        <br>
+    </div>
+
+    <!-- Govt.Image -->
+    <div class="govt-img">
+        <br>
+        <div class="img-div">
+            <img src="./image/Govt-Img/p1.jpg" alt="" onclick="digitalIndia()">
+            <img src="./image/Govt-Img/p2.png" alt=""  onclick="Mudra()">
+            <img src="./image/Govt-Img/p3.webp" alt=""  onclick="swatchBharat()">
+            <img src="./image/Govt-Img/p4.png" alt=""  onclick="skillIndia()">
+            <img src="./image/Govt-Img/p5.jpg" alt=""  onclick="g2O()">
+            <img src="./image/Govt-Img/p6.jpg" alt=""  onclick="myGov()">
+            <img src="./image/Govt-Img/p7.png" alt=""  onclick="aadhar()">
+            <img src="./image/Govt-Img/p8.png" alt=""  onclick="govtOfIndia()">
+            <img src="./image/Govt-Img/p9.jpg" alt="" onclick="lokpal()">
+            <img src="./image/Govt-Img/p10.png" alt=""  onclick="worldFoodIndia()">
+            <img src="./image/Govt-Img/p11.png" alt=""  onclick="IndianPost()">
+            <img src="./image/Govt-Img/p12.png" alt=""  onclick="myGov()">
+        </div>
+    </div>
+    <br>
+
+</main>
+    <footer>
+        <div class="footer-container">
+            <div class="service1">
+                <h3><a href="./service.html"> Services</a></h3>
+                <ul>
+                    <li><a href="#">Drone Service</a></li>
+                    <li><a href="#">GIS Service</a></li>
+                    <li><a href="#">DSM & DTM Service</a></li>
+                    <li><a href="#">3D-Model Service</a></li>
+                </ul>
+            </div>
+
+            <div class="features">
+                <h3><a href="./features.html">Features</a></h3>
+                <ul>
+                    <li>Advanced Equipment</li>
+                    <li>Team of Expert</li>
+                    <li>99% accuracy</li>
+                    <li>5x faster Dilivary</li>
+                    <li>one to one Support</li>
+                </ul>
+            </div>
+
+            <div class="policies">
+                <h3>Peoples and Policies</h3>
+                <ul>
+                    <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    <!-- <li>Disclaimer</li> -->
+                    <!-- <li>Who is Who</li> -->
+                    <li><a href="./policy.html">Privacy Policy</a></li>
+                    <!-- <li>Privacy Policy</li> -->
+                    <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+                    <!-- <li>GOI Web Directory</li> -->
+                </ul>
+            </div>
+
+            <div class="planning">
+                <h3><a href="./planning.html">Planning</a></h3>
+                <ul>
+                    <li><a href="#">Scheduling</a></li>
+                    <li><a href="#">Planning</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-details">
+                
+                    <h3><a href="#/contact.html">Contact Details</a></h3>
+                    <ul>
+                    <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+                    <li> <p>Contact No: +91 22 2757 1537</p></li>
+                    <!-- <li>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="footer_img">
+            <div class="marquee-container">
+                <div class="marquee-1">
+                <img src="./image/footer/p1.jpg" alt="">
+                <img src="./image/footer/p2.png" alt="">
+                <img src="./image/footer/p3.webp" alt="">
+                <img src="./image/footer/p4.png" alt="">
+                <img src="./image/footer/p5.jpg" alt="">
+                <img src="./image/footer/p6.png" alt="">
+                <img src="./image/footer/p7.png" alt="">
+                <img src="./image/footer/p8.jpg" alt="">
+        </div>
+        </div>
+        </div> 
+        <div class="copyright">
+            &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai,Navi Mumbai | All rights reserved.
+        </div>
+    <div class="w3">
+        <p>
+        <a href="https://jigsaw.w3.org/css-validator">
+            <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" >
+        </a>
+      
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+        </p>
+                 
+    </div>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/liveDate.js"></script> -->
+    <!-- <script src="./js/zoomInOut.js"></script> -->
+    <script src="./js/service-worker.js"></script>
+  
+<!-- </header>
+ -->
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Coastline Of Maharashtra</title>
+    <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+    <link rel="stylesheet" href="./css/service.css" >
+<link rel="stylesheet" href="./css/styles.css" >
+</head>
+
+
+<body>
+    <!-- live date and zoom in zoom out buton -->
+    <div id="zoomButtons">
+        <button onclick="zoomOut()">A-</button>
+        <button onclick="resetZoom()">A</button>
+        <button onclick="zoomIn()">A+</button>
+        |
+        <span id="liveDate"></span> 
+        <div id="google_translate_element"></div>
+      </div>
+
+    <!-- HEADING -->
+    <header>
+        <div class="header">
+            <!-- <img src="./image/index/logo.jpg" alt=""> -->
+           <img src="./image/logo/satyamev-jayate.jpg" alt="">
+            <h1>Maharashtra <br>Coastline</h1>
+            <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+           
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+        <a href="about.html" onclick="setActive(this)">About</a>
+        <a href="service.html" onclick="setActive(this)">Services</a>
+        <a href="features.html" onclick="setActive(this)">Features</a>
+        <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+        <a href="project_data.html" onclick="setActive(this)">Project</a>
+        <!-- <a href="project.html" onclick="setActive(this)">Project</a>
+        <a href="data.html" onclick="setActive(this)">Data</a> -->
+    </nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
+
+    <main>
+        <div class="head">
+            <h1>SERVICES</h1>
+            <br>
+            <p>Map’s the first need of the beginning of any project from small construction work to big
+                mining and infrastructure project.
+                A geographic information system (GIS) is a system that creates, manages, analyzes, and maps
+                all types of data. GIS connects data to a map,
+
+            </p>
+        </div>
+        <div class="middle">
+            <a href="#" class="filter-link" data-filter="all" id="all">All</a>
+            <a href="#" class="filter-link" data-filter="drone">Drone</a>
+            <a href="#" class="filter-link" data-filter="gis">Gis</a>
+            <a href="#" class="filter-link" data-filter="dsm-dtm">DSM & DTM</a>
+            <a href="#" class="filter-link" data-filter="3d-model">3-D Model</a>
+        </div>
+        <div class="end">
+
+            <div class="box">
+                <div class="box1" data-category="drone">
+                    <img src="./image/service/Drone1.jpg" alt="" id="Drone-img" title="Done Image" class="image-hover">
+                    <div class="layer">
+                        <h3> Drone</h3>
+                    </div>
+                </div>
+                <div class="box1" data-category="drone">
+                    <img src="./image/service/drone2.jpg" alt="" id="Drone-img" title="Drone Image" class="image-hover">
+                    <div class="layer">
+                        <h3> Drone</h3>
+                    </div>
+                </div>
+                <div class="box1" data-category="gis">
+                    <img src="./image/service/GIS.jpg" alt="" id="GIS-img" title="GIS Image" class="image-hover">
+                    <div class="layer">
+                        <h3>Gis</h3>
+                    </div>
+                </div>
+                <div class="box1" data-category="gis">
+                    <img src="./image/service/GIS1.png" alt="" id="GIS-img" title="GIS Image" class="image-hover">
+                    <div class="layer">
+                        <h3>Gis</h3>
+                    </div>
+                </div>
+                <div class="box1" data-category="dsm-dtm">
+                    <img src="./image/service/DSM.jpg" alt="" id="DSM-img" title="DSM & DTMImage" class="image-hover">
+                    <div class="layer">
+                        <h3>DSM & DTM</h3>
+                    </div>
+                </div>
+                <div class="box1" data-category="3d-model">
+                    <img src="./image/service/3-D.png" alt="" id="img-3d" title="3d-model Image" class="image-hover">
+                    <div class="layer">
+                        <h3>3-D Model</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="additional-info">
+                <!-- DRONE service INFO -->
+                <div id="drone-info-right">
+
+
+                    <h2>Drone Service</h2>
+                    <br>
+                    <p>Map’s the first need of the beginning of any project from small construction work to big
+                        mining and infrastructure project.
+                        These needs are conventionally met by either satellite imagery which is very inaccurate and
+                        obsolete.Also via conventional
+                        surveys using ground equipment which takes days to deliver the final outputs. Our drones can
+                        produce sophisticated 2D maps.
+                        That enable you to fill in imaging gaps left by satellite mapping with up-to-date data. We
+                        currently provide services to
+                        construction,the oil & gas industry, landscape architects, surveyors to name a few.
+
+                        Using our drones, we offer high-resolution maps for the purpose at the most affordable cost.
+                        Dronitech AerialIntelligence platform
+                        provides a set of tools for visualizing, measuring and storing data. Intuitive commands
+                        allow the user to visualize a site in 2D or
+                        3D.Which includes support for orthophotography, digital surface and 3D models.
+
+                    </p>
+                  
+                </div>
+                <!-- GIS service info -->
+                <div id="gis-info-right">
+                   
+                    <h2>geographic information system (GIS) Service</h2>
+                    <br>
+                    <p>A geographic information system (GIS) is a system that creates, manages, analyzes, and maps
+                        all types of data. GIS connects data to a map,
+                        integrating location data (where things are) with all types of descriptive information (what
+                        things are like there).
+                        This provides a foundation for mapping and analysis that is used in science and almost every
+                        industry.
+                        GIS helps users understand patterns, relationships, and geographic context.
+                        The benefits include improved communication and efficiency as well as better management and
+                        decision making.</P>
+              
+                </div>
+                <!-- 3D service info -->
+                <div id="3d-model-info-right">
+                    
+                    <h2>3-D Mapping Service</h2>
+                    <br>
+                    <p> 3-D Mapping, aka “Photogrammetry 3D Models” are used in fields such as topographic mapping,
+                        architecture, engineering, manufacturing,
+                        quality control, police investigation, cultural heritage, and geology.
+                        Archaeologists use it to quickly produce plans of large or complex sites, and meteorologists
+                        use it to determine the wind speed of tornadoes
+                        when objective weather data cannot be obtained.</p>
+                  
+                </div>
+                <!-- DSM service info -->
+                <div id="dsm-dtm-info-right">
+                    
+                    <h2>DTM (Digital Terrain Model) Service</h2>
+                    <br>
+                    <p>DTM (Digital Terrain Model) typically augments a DEM, by including vector features of the
+                        natural terrain, such as rivers and ridges.
+                        A DTM may be interpolated to generate a DEM,DTM’s terrain-focused precision each play a
+                        unique role in shaping our spatial insights.
+                        DTM is a vector data set consisting of dots at regular intervals and natural features such
+                        as
+                        mountain ridge and breaking lines (a line in the model showing a marked cut in the slope of
+                        a surface, such as a road or a stream).
+                        DSM (Digital Surface Model) captures both the natural and built/artificial features of the
+                        environment,
+                        A DSM is useful in 3D modeling for telecommunications, urban planning, and aviation. Because
+                        objects extrude from the Earth, </p>
+                
+                </div>
+            </div>
+
+            <br>
+            <div class="box_btn">
+                <button id="load-more">LOAD MORE</button>
+            </div> <br>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="service1">
+            <h3><a href="./service.html"> Services</a></h3>
+            <ul>
+              <li><a href="#">Drone Service</a></li>
+              <li><a href="#">GIS Service</a></li>
+              <li><a href="#">DSM & DTM Service</a></li>
+              <li><a href="#">3D-Model Service</a></li>
+            </ul>
+          </div>
+      
+          <div class="features">
+            <h3><a href="./features.html">Features</a></h3>
+            <ul>
+              <li>Advanced Equipment</li>
+              <li>Team of Expert</li>
+              <li>99% accuracy</li>
+              <li>5x faster Dilivary</li>
+              <li>one to one Support</li>
+            </ul>
+          </div>
+
+          <div class="policies">
+            <h3>Peoples and Policies</h3>
+            <ul>
+                <li><a href="./disclaimer.html">Disclaimer</a></li>
+                <!-- <li>Disclaimer</li> -->
+                <!-- <li>Who is Who</li> -->
+                <li><a href="./policy.html">Privacy Policy</a></li>
+                <!-- <li>Privacy Policy</li> -->
+                <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+                <!-- <li>GOI Web Directory</li> -->
+            </ul>
+        </div>
+      
+          <div class="planning">
+            <h3><a href="./planning.html">Planning</a></h3>
+            <ul>
+              <li><a href="#">Scheduling</a></li>
+              <li><a href="#">Planning</a></li>
+            </ul>
+          </div>
+      
+          <div class="contact-details">
+                <h3><a href="#/contact.html">Contact Details</a></h3>
+                <ul>
+                <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+                <li> <p>Contact No: +91 22 2757 1537</p></li></ul>
+                <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+                <li><p>Email: info@amdatalab.com</p></li>
+                </ul> -->
+          </div>
+        </div>
+        <div class="footer_img">
+            <div class="marquee-container">
+                <div class="marquee-1">
+                <img src="./image/footer/p1.jpg" alt="">
+                <img src="./image/footer/p2.png" alt="">
+                <img src="./image/footer/p3.webp" alt="">
+                <img src="./image/footer/p4.png" alt="">
+                <img src="./image/footer/p5.jpg" alt="">
+                <img src="./image/footer/p6.png" alt="">
+                <img src="./image/footer/p7.png" alt="">
+                <img src="./image/footer/p8.jpg" alt="">
+            </div>
+            </div>
+        </div> 
+        <div class="copyright">
+          &copy; 2023 Maharashtra Coastal | Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
+        </div>
+        <div class="w3">
+            <img src="./image/f1cs.jpg" alt="">
+            <img src="./image/f2cs.png" alt="">
+            <img src="./image/f3cs.png" alt="">
+            <img src="./image/f4cs.gif" alt="">
+            </div>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+                </script>
+                
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</footer>
+    
+    <script src="./js/service.js"></script>
+    <script src="./js/liveDate.js"></script>
+    <script src="./js/zoomInOut.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet KML Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 600px; }
+        .text-label {
+            font-size: 12px;
+            color: black; /* Text color */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background color */
+            padding: 2px; /* Padding around text */
+            border: 1px solid black; /* Border around text */
+            border-radius: 3px; /* Rounded corners for border */
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
+    <script>
+        var map = L.map('map').setView([0, 0], 2); // Set initial view
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        function addKMLLayer(kmlURL) {
+            fetch(kmlURL)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch KML file');
+                    }
+                    return response.text();
+                })
+                .then(kmlText => {
+                    // Parse KML text and add to map using omnivore
+                    var kmlLayer = omnivore.kml.parse(kmlText, null, L.geoJSON(null, {
+                        style: function (feature) {
+                            // Example: Set style based on KML properties
+                            var style = {
+                                weight: feature.properties.strokeWidth || 2
+                            };
+                            if (feature.geometry.type === 'Polygon') {
+                                if (feature.properties.fill && feature.properties.fill.toLowerCase() === 'cyan') {
+                                    style.fillColor = 'cyan'; // Set sea color to cyan
+                                    style.fillOpacity = 0.5;
+                                    style.color = 'blue'; // Outline color for sea polygons
+                                } else {
+                                    style.fillColor = feature.properties.fill || 'brown'; // Land color
+                                    style.fillOpacity = 0.5;
+                                    style.color = feature.properties.stroke || 'blue'; // Boundary color
+                                }
+                            } else if (feature.geometry.type === 'LineString') {
+                                style.color = feature.properties.stroke || 'black'; // Boundary color for lines
+                            }
+                            return style;
+                        },
+                        pointToLayer: function (feature, latlng) {
+                            var text = feature.properties.name || "Default Text";
+                            var marker = L.marker(latlng, {
+                                icon: L.divIcon({
+                                    className: 'text-label',
+                                    html: text,
+                                    iconSize: [0, 0] // Adjust size if needed
+                                })
+                            });
+                            return marker;
+                        }
+                    })).addTo(map);
+
+                    // Fit map to bounds of KML layer
+                    map.fitBounds(kmlLayer.getBounds());
+                })
+                .catch(error => {
+                    console.error('Error loading KML file:', error);
+                    alert('Error loading KML file');
+                });
+        }
+
+        // Example usage: Replace 'path/to/your.kml' with the actual URL/path to your KML file
+        // addKMLLayer('./data/VILLAGE MAP/VILLAGE MAP KML NEW/SINDHUDURG/MALWAN/OZAR.kml');
+        addKMLLayer('./data/VILLAGE MAP/VILLAGE MAP KML NEW/SINDHUDURG/VENGURLA/PARABHWADA.kml');
+    </script>
+    <!-- <a href="./data/VILLAGE MAP/VILLAGE MAP KML NEW/SINDHUDURG/VENGURLA/PARABHWADA.kml"></a> -->
+</body>
+</html>

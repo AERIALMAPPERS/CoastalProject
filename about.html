@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastline Of Maharashtra</title>
+    <link rel="icon" type="image/png" href="./image/logo/favicon.png">
+    <!-- <link rel="stylesheet" href="./css/demo.css" > -->
+    <link rel="stylesheet" href="./css/about.css" />
+<link rel="stylesheet" href="./css/styles.css" />
+<link rel="stylesheet" href="./css/pie.css"/>
+</head>
+
+
+<body>
+     <!-- live date and zoom in zoom out buton -->
+     <div id="zoomButtons">
+        <button onclick="zoomOut()">A-</button>
+        <button onclick="resetZoom()">A</button>
+        <button onclick="zoomIn()">A+</button>
+        |
+        <span id="liveDate"></span> 
+        <div id="google_translate_element"></div>
+      </div>
+
+    <!-- HEADING -->
+    <header>
+        <div class="header">
+            <!-- <img src="./image/index/logo.jpg" alt=""> -->
+           <img src="./image/logo/satyamev-jayate.jpg" alt="">
+            <h1>Maharashtra <br>Coastline</h1>
+            <img src="./image/logo/coastl.png" alt="" id="coastal-logo">
+           
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)" class="active">Home</a>
+        <a href="about.html" onclick="setActive(this)">About</a>
+        <a href="service.html" onclick="setActive(this)">Services</a>
+        <a href="features.html" onclick="setActive(this)">Features</a>
+        <a href="gallery.html" onclick="setActive(this)">Gallery</a>
+        <a href="project_data.html" onclick="setActive(this)">Project</a>
+        <!-- <a href="project.html" onclick="setActive(this)">Project</a> -->
+        <!-- <a href="data.html" onclick="setActive(this)">Data</a> -->
+    </nav>
+<!-- <br> -->
+
+<div class="marquee-container">
+    <div class="marquee">
+  Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
+  download geo-referenced village digital maps ,CRZ maps, ECW of coastal areas,DEM , CONTOUR , DGPS & other details of 
+  villages in the coastline area of Maharashtra .
+  </div>
+  </div>
+
+    <main>
+        <!-- about detail -->
+        <div class="about-detail">
+            <h1>ABOUT</h1>
+            <div id="about-content">
+                <div class="p">
+                    <p> Maharashtra is the second most populous and third largest state of India. It spread over
+                        307713 Sq. Km and situated over west coast of India. Maharashtra occupies the western and
+                        central part of the country and as per statistical data available, Maharashtra has a long
+                        coastline stretching 720 kilometers along the Arabian Sea, which is divided, among 6<br>
+                        Districts as under: Out of this 720 Kms coastal length 400 Kms length is naturally protected, &
+                        About 320 Kms length is vulnerable to erosion. Out of this, protection for 145 Kms has been
+                        protected by artificial means such as Construction of Anti Sea Erosion Bund, Sea Wall, and each
+                        Nourishment inform of Geotubes etc. The remaining length is yet to be protected.
+                        Out of this 720 Kms coastal length 400 Kms length is
+                        naturally protected, & About 320 Kms length is vulnerable to erosion. Out of this, protection
+                        for 145 Kms has been protected by artificial means such as Construction of Anti Sea Erosion
+                        Bund, Sea Wall, and each Nourishment inform of Geotubes etc. The remaining length is yet to be
+                        protected.
+                        For Development Of setback planning, hazard zoning, erosion – accretion studies, regional
+                        sediment budgets, modeling of coastal morph dynamics,
+                        survey of coastline with latest technology is required for preparing Coastal Management Plan for
+                        erosion control measures to ensure effective protection of shore lines, coastal infrastructure,
+                        livelihoods and lives.<br>
+                        IN Maharashtra Integrated Coastal Zone Management Is One Of The Tools To Achieve This Goal.
+                        Coastal Zones Involve Many Different Elements Of Development And Interaction And These Elements
+                        Change Due To Natural Or Human Factors.
+
+                        Temporal Change In Coastal Zones Is Reflected On The Coast Line. Coast Line Advance And Retreat
+                        Cause Major Changes On Coastal Zones.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="./image/about/img1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="Region">
+       
+              
+                <h1>REGION </h1>
+                <ul class="image-list">
+                    <li><a href="#" onclick="displayImage(event, './image/about/palghar.jpg')">Palghar Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Raigadf.jpg')">Raigad Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Mumbai.jpg')"> Mumbai Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Thanef.jpg')"> Thane Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Ratnagiriff.jpg')">Ratnagiri Region</a></li>
+                    <li><a href="#" onclick="displayImage(event, './image/about/Sindhudurg.jpg')">Sindhudurg Region</a></li>
+                </ul>
+            </div>
+        <div class="map-img">
+            <img  alt="" id="displayedImage" src="./image/about/img3.png">
+            <button id="A1" onclick="displayImage(event,'./image/about/img3.png')">State</button>
+            <button id="A2" onclick="displayImage(event,'./image/about/costal.png')">Region</button>
+            <button id="A3" onclick="displayImage(event,'./image/about/img1.jpg')">Circle</button>
+            <button id="A4" onclick="displayImage(event,'./image/about/img3.png')">Back</button>
+            
+            </div>
+        </div> 
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <div class="project-brief">
+
+            <div id="brief-content">
+                <!-- <div class="img"> -->
+                    <!-- <img src="./image/about/barchart.jpg" alt="" id="barchart"> -->
+                    <div id="myChart">
+                    
+                    <script>
+                    google.charts.load('current', {'packages':['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    
+                    function drawChart() {
+        const data = google.visualization.arrayToDataTable([
+            ['DISTRICT', 'Mhl'],
+            ['RATNAGIRI', 238],
+            ['RAIGAD', 121],
+            ['SINDHUDURG', 120],
+            ['PALGHAR', 110.5],
+            ['MUMBAI', 114],
+            ['THANE', 16.5]
+        ]);
+
+        const windowWidth = window.innerWidth;
+        
+        let chartWidth = '100%';
+        let chartHeight = 550;
+
+        // Adjust size based on window width
+        if (windowWidth <= 200) {
+            chartWidth = windowWidth - 20; // Slight margin for padding
+            chartHeight = 100; // Height for very small screens
+        } else if (windowWidth <= 300) {
+            chartWidth =300;
+            chartHeight = 200;
+        } else if (windowWidth <= 480) {
+            chartWidth = '100%';
+            chartHeight = 250;
+        } else if (windowWidth <= 767) {
+            chartWidth = '100%';
+            chartHeight = 300;
+        }
+
+        const options = {
+            title: 'COASTALINE LENGTH IN 720(KM)',
+            is3D: true,
+            width: chartWidth,
+            height: chartHeight
+        };
+
+        const chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+    }
+
+    // Redraw chart on window resize
+    window.onresize = drawChart;
+
+    // Initial chart draw
+    google.charts.setOnLoadCallback(drawChart);
+
+                    </script>
+                </div>
+                <div class="brief-p">
+                    <h1>PROJECT BRIEF</h1>
+                    <br>
+                    <p> A. Drone lidar technology is play an important role in inaccessible coastal areas.
+                        B. In places like forests and hills where the trees are dense, normal mapping equipment can have
+                        a difficult time determining elevation, but not lidar. You can use it in even a
+                        densely covered area to collect elevation information.
+
+
+                        Lidar Is An Optical Remote-sensing Technology That Can Measure The Distance To, Or Other
+                        Properties Of, Targets By Illuminating The Target With Laser Light And Analyzing The
+                        Backscattered Light.
+
+                        A LiDAR system uses a laser, a GPS and an IMU to estimate the heights of objects on the ground.
+                        Discrete LiDAR data are generated from waveforms -- each point represents peak energy points
+                        along the returned energy. Discrete LiDAR points contain an X, Y and Z value.
+
+                        LIDAR point cloud data is a collection of points that describe a surface or an object. Each
+                        point is described with x, y, and z coordinates and in some cases is associated with additional
+                        attributes such as a classification of the point. LIDAR data is used to extract accurate
+                        geo-referenced vector features such as buildings, roads, and trees.
+                        <br>
+                        Georeferencing means that the internal coordinate system of a digital map or aerial photo can be
+                        related to a ground system of geographic coordinates. A georeferenced digital map or image has
+                        been tied to a known Earth coordinate system, so users can determine where every point on the
+                        map or aerial photo is located on the Earth's surface.
+                        allows the integration of spatial data from different sources. It allows for the use of data for
+                        a variety of purposes such as analysis, planning, decision making and documenting among others.
+                        Georeferencing also makes it possible to have standardization in the spatial data by allowing it
+                        to be compatible to any software used in GIS without causing difficulties.
+                        Georeferencing also enables the geographic information system to easily incorporate data from
+                        different sources including satellite images and maps into a single database.
+
+                        The coastline paradox of a landmass has no defined length. Depending on the scale used, the
+                        coastline may be larger or smaller.
+
+                    </p>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+
+
+
+        
+        <!-- sliding image -->
+<div class="sliding">
+  <div class="slideshow-container">
+      <div class="mySlides">
+          <img src="./image/about-sliding/india.jpg" alt="Image1">
+      </div>
+      <!-- <div class="mySlides">
+          <img src="./image/about-sliding/kd.jpg" alt="Image2" id="img2">
+      </div> -->
+      <div class="mySlides">
+          <img src="./image/about-sliding/2.jpg" alt="Image1">
+      </div>
+      <div class="mySlides">
+          <img src="./image/about-sliding/3.jpg" alt="Image2">
+      </div>
+      <div class="mySlides">
+          <img src="./image/about-sliding/8.JPG" alt="Image1">
+      </div>
+      <div class="mySlides">
+          <img src="./image/about-sliding/img1.jpg" alt="Image2">
+      </div>
+      <div class="mySlides">
+          <img src="./image/about-sliding/img5.JPG" alt="Image1">
+      </div>
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+  </div>
+  </div>
+    </main>
+<br>
+    <!-- ////////////////////////////////////////////// -->
+    
+    <footer>
+        <div class="footer-container">
+          <div class="service1">
+            <h3><a href="./service.html">Services</a></h3>
+            <ul>
+              <li><a href="#">Drone Service</a></li>
+              <li><a href="#">GIS Service</a></li>
+              <li><a href="#">DSM & DTM Service</a></li>
+              <li><a href="#">3D-Model Service</a></li>
+            </ul>
+          </div>
+      
+          <div class="features">
+            <h3><a href="./features.html">Features</a></h3>
+            <ul>
+              <li>Advanced Equipment</li>
+              <li>Team of Expert</li>
+              <li>99% accuracy</li>
+              <li>5x faster Dilivary</li>
+              <li>one to one Support</li>
+            </ul>
+          </div>
+
+          <div class="policies">
+            <h3>Peoples and Policies</h3>
+            <ul>
+                <li><a href="./disclaimer.html">Disclaimer</a></li>
+                <!-- <li>Disclaimer</li> -->
+                <!-- <li>Who is Who</li> -->
+                <li><a href="./policy.html">Privacy Policy</a></li>
+                <!-- <li>Privacy Policy</li> -->
+                <li><a href="https://igod.gov.in/">GOI Web Directory</a></li>
+                <!-- <li>GOI Web Directory</li> -->
+            </ul>
+        </div>
+      
+          <div class="planning">
+            <h3><a href="./planning.html">Planning</a></h3> 
+            <ul>  
+              <li><a href="#">Scheduling</a></li>
+              <li><a href="#">Planning</a></li>
+            </ul>
+          </div>
+      
+          <div class="contact-details">
+           
+                <h3><a href="#/contact.html">Contact Details</a></h3>
+                <ul>
+                <li><p>Harbour Engineer, Harbour Engineering Division, Konkan Bhavan, Navi Mumbai(New Mumbai)400614.</p></li>
+                <li> <p>Contact No: +91 22 2757 1537</p></li>
+                <!-- <li> <p>Contact No: +1 123-456-7890</p></li>
+                <li><p>Email: info@amdatalab.com</p></li> -->
+                </ul>
+          </div>
+        </div>
+        <div class="footer_img">
+            <div class="marquee-container">
+            <div class="marquee-1">
+                <img src="./image/footer/p1.jpg" alt="">
+                <img src="./image/footer/p2.png" alt="">
+                <img src="./image/footer/p3.webp" alt="">
+                <img src="./image/footer/p4.png" alt="">
+                <img src="./image/footer/p5.jpg" alt="">
+                <img src="./image/footer/p6.png" alt="">
+                <img src="./image/footer/p7.png" alt="">
+                <img src="./image/footer/p8.jpg" alt="">
+            </div>
+            </div>
+        </div> 
+        <div class="copyright">
+          &copy; 2023,2024 Maharashtra Coastal |Harbour Engineering Division,Konkan Bhavan,Navi Mumbai | All rights reserved.
+        </div>
+        <div class="w3">
+            <p>
+            <a href="https://jigsaw.w3.org/css-validator">
+                <img style="border:0;width:88px;height:31px"
+                    src="https://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" >
+            </a>
+          
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                    alt="Valid CSS!" />
+                </a>
+            </p>
+                     
+        </div>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+            
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </footer>
+ <!-- Java Script -->
+ <script src="./js/about.js"></script>
+ <script src="./js/liveDate.js"></script>
+ <script src="./js/zoomInOut.js"></script>
+ <!-- <script src="./js/demo.js"></script> -->
+</body>
+</html>

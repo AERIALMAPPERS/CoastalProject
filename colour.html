@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet KML Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 600px; }
+        .text-label {
+            font-size: 12px;
+            color: black; /* Text color */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background color */
+            padding: 2px; /* Padding around text */
+            border: 1px solid black; /* Border around text */
+            border-radius: 3px; /* Rounded corners for border */
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
+    <script>
+        var map = L.map('map').setView([0, 0], 2); // Set initial view
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        function addKMLLayer(kmlURL) {
+    fetch(kmlURL)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch KML file');
+            }
+            return response.text();
+        })
+        .then(kmlText => {
+            var parser = new DOMParser();
+            var kmlDoc = parser.parseFromString(kmlText, 'text/xml');
+            var kmlLayer = omnivore.kml.parse(kmlText);
+
+            function getKMLStyle(feature) {
+                var style = {};
+
+                var styleUrl = feature.properties.styleUrl;
+                if (styleUrl) {
+                    var styleId = styleUrl.replace('#', '');
+                    var styleElement = kmlDoc.getElementById(styleId);
+
+                    if (styleElement) {
+                        var lineStyle = styleElement.getElementsByTagName('LineStyle')[0];
+                        var polyStyle = styleElement.getElementsByTagName('PolyStyle')[0];
+
+                        if (lineStyle) {
+                            var color = lineStyle.getElementsByTagName('color')[0].textContent;
+                            var width = lineStyle.getElementsByTagName('width')[0].textContent;
+                            style.color = '#' + color.substr(6, 2) + color.substr(4, 2) + color.substr(2, 2);
+                            style.weight = parseFloat(width) + 2; // Increase the weight to bold the boundary
+                        }
+
+                        if (polyStyle) {
+                            var fillColor = polyStyle.getElementsByTagName('color')[0].textContent;
+                            style.fillColor = '#' + fillColor.substr(6, 2) + fillColor.substr(4, 2) + fillColor.substr(2, 2);
+                            style.fillOpacity = parseInt(fillColor.substr(0, 2), 16) / 255.0;
+                        }
+                    }
+                }
+
+                // Ensure the boundary is bold by setting a default style if no style is found
+                style.weight = style.weight || 5;
+                style.color = style.color || '#000000';
+
+                return style;
+            }
+
+            kmlLayer.eachLayer(function(layer) {
+                var feature = layer.feature;
+
+                if (feature.geometry.type === 'Point') {
+                    var text = feature.properties.name || "Default Text";
+                    var icon = L.divIcon({
+                        className: 'text-label',
+                        html: text,
+                        iconSize: [0, 0]
+                    });
+                    L.marker(layer.getLatLng(), { icon: icon }).addTo(map);
+                    return; // Skip adding this point layer again
+                } else {
+                    var style = getKMLStyle(feature);
+                    layer.setStyle(style);
+                }
+            });
+
+            kmlLayer.addTo(map);
+            map.fitBounds(kmlLayer.getBounds());
+        })
+        .catch(error => {
+            console.error('Error loading KML file:', error);
+            alert('Error loading KML file');
+        });
+}
+
+
+        // Example usage: Replace 'path/to/your.kml' with the actual URL/path to your KML file
+        // addKMLLayer('./data/VILLAGE MAP/VILLAGE MAP KML NEW/SINDHUDURG/VENGURLA/PARABHWADA.kml');
+        addKMLLayer('./data/VILLAGE MAP/VILLAGE MAP KML NEW/SINDHUDURG/MALWAN/OZAR.kml');
+    </script>
+</body>
+</html>
