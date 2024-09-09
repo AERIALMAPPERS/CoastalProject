@@ -22,9 +22,14 @@ body {
   font-size: 16px; /* Initial font size */
   transition: font-size 0.3s ease; /* Smooth transition */
 }
-
+/* .content{
+  display: flex;
+  justify-content: start;
+} */
 #zoomButtons {
   /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
   top: 0px;
   right: 10px;
   z-index: 9999;
@@ -34,13 +39,6 @@ body {
    .zoom-normal {
     font-size: 16px; /* Change this value according to your original font size */
 }
-/* .zoom-in {
-    font-size: 120%; 
-}
-.zoom-out {
-    font-size: 60%; 
-} */
-
 button {
   cursor: pointer;
   margin: 7px;
@@ -48,6 +46,9 @@ button {
   border-radius: 5px;
   border: 1px solid #000;
   background-color: #fff;
+}
+#google_translate_element{
+  margin-right: 20px;
 }
 
 header {
@@ -104,15 +105,6 @@ section {
     padding: 1em;
 }
 
-/* .hr{
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-} */
-/* second nav---------- */
 #nav1 {
   display: flex;
   width: 50%;
@@ -257,15 +249,6 @@ margin: 0px;
     margin-top: 20px;
     margin-right: 30px;
 }
-/* .text-label {
-  font-size: 12px;
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-  padding: 2px;
-  border-radius: 3px;
-  text-align: center;
-} */
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
