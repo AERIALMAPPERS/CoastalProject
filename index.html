@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Coastline Of Maharashtra</title>
     <link rel="icon" type="image/png" href="./image/logo/favicon.png"><link rel="stylesheet" href="./css/index.css">
-    <link rel="manifest" href="./json/manifest.json">
     <link rel="stylesheet" href="./css/styles.css" >
-
+   
 </head>
 <body>
    <!-- live date and zoom in zoom out buton -->
-    <div id="zoomButtons">
-        <button onclick="zoomOut()">A-</button>
-            <button onclick="resetZoom()">A</button>
-            <button onclick="zoomIn()">A+</button>
-        |
-        <span id="liveDate"></span> 
-        <div id="google_translate_element"></div>
-      </div>
+   <div id="zoomButtons">
+    <div class="content">
+      <button onclick="zoomOut()">A-</button>
+      <button onclick="resetZoom()">A</button>
+      <button onclick="zoomIn()">A+</button>
+      |
+      <span id="liveDate"></span>
+    </div>
+    <div id="google_translate_element"></div>
+  </div>
 
     <!-- HEADING -->
     <header>
@@ -886,20 +887,13 @@
         </p>
                  
     </div>
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
-    
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </footer>
 
     <script src="./js/index.js"></script>
-    <!-- <script src="./js/liveDate.js"></script> -->
-    <!-- <script src="./js/zoomInOut.js"></script> -->
-    <script src="./js/service-worker.js"></script>
+    <script src="./js/liveDate.js"></script>
+    <script src="./js/zoomInOut.js"></script>
+    <script src="./js/translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
 <!-- </header>
  -->

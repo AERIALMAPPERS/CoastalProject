@@ -15,11 +15,13 @@
 <body>
    <!-- live date and zoom in zoom out buton -->
    <div id="zoomButtons">
-    <button onclick="zoomOut()">A-</button>
-        <button onclick="resetZoom()">A</button>
-        <button onclick="zoomIn()">A+</button>
-    |
-    <span id="liveDate"></span> 
+    <div class="content">
+      <button onclick="zoomOut()">A-</button>
+      <button onclick="resetZoom()">A</button>
+      <button onclick="zoomIn()">A+</button>
+      |
+      <span id="liveDate"></span>
+    </div>
     <div id="google_translate_element"></div>
   </div>
 
@@ -46,7 +48,7 @@
     <a href="data.html" onclick="setActive(this)">Data</a> -->
 </nav>
 <!-- <br> -->
-<!-- <script src="./data/PORTS AND HARBOUR/KML/PALGHAR/DAHANU/CHINCHANI.kml" -->
+
 <div class="marquee-container">
   <div class="marquee">
 Government of Maharashtra | Maharashtra Coastline Project 2023-2024 | Develop a web-based system to search, view, and
@@ -145,15 +147,6 @@ villages in the coastline area of Maharashtra .
       <img src="./image/f3cs.png" alt="">
       <img src="./image/f4cs.gif" alt="">
       </div>
-
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
-  
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </footer>
   <!-- Java Script -->
   <script src="./js/index.js"></script>
@@ -163,6 +156,8 @@ villages in the coastline area of Maharashtra .
   <script src="./js/index.js"></script>
   <script src="./js/liveDate.js"></script>
   <script src="./js/zoomInOut.js"></script>
+  <script src="./js/translate.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
