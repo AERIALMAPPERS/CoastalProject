@@ -11,13 +11,6 @@
   </Style>
   <Style id="line2">
     <LineStyle>
-      <color>FFFF00FF</color>
-      <width>1</width>
-    </LineStyle>
-    <IconStyle><Icon></Icon></IconStyle>
-  </Style>
-  <Style id="line3">
-    <LineStyle>
       <color>FF007FFF</color>
       <width>1</width>
     </LineStyle>
@@ -45,21 +38,8 @@
     <name>Line Features</name>
     <description>Line Features</description>
     <Placemark>
-      <description>0</description>
-      <styleUrl>#line1</styleUrl>
-      <LineString>
-        <altitudeMode>clampToGround</altitudeMode>
-        <extrude>0</extrude>
-        <tessellate>1</tessellate>
-        <coordinates>
-          73.261413723,17.165352714,0
-          73.261750766,17.164992888,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
       <description>village</description>
-      <styleUrl>#line2</styleUrl>
+      <styleUrl>#line1</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>
@@ -186,7 +166,7 @@
     </Placemark>
     <Placemark>
       <description>village</description>
-      <styleUrl>#line2</styleUrl>
+      <styleUrl>#line1</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>
@@ -257,8 +237,21 @@
       </LineString>
     </Placemark>
     <Placemark>
+      <description>0</description>
+      <styleUrl>#line1</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
+          73.261413723,17.165352714,0
+          73.261750766,17.164992888,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
       <description>SEAWALL</description>
-      <styleUrl>#line3</styleUrl>
+      <styleUrl>#line2</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>
@@ -279,7 +272,7 @@
     </Placemark>
     <Placemark>
       <description>SEAWALL</description>
-      <styleUrl>#line3</styleUrl>
+      <styleUrl>#line2</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>
@@ -297,7 +290,7 @@
     </Placemark>
     <Placemark>
       <description>SEAWALL</description>
-      <styleUrl>#line3</styleUrl>
+      <styleUrl>#line2</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>
