@@ -14,6 +14,12 @@
       <width>1</width>
     </LineStyle>
   </Style>
+  <Style id="line3">
+    <LineStyle>
+      <color>FF00FFFF</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
   <Style id="point1">
     <IconStyle><Icon><href>kml_symbol_no symbol_0.png</href></Icon></IconStyle>
     <LabelStyle><color>ff333333</color></LabelStyle>
@@ -148,7 +154,7 @@
     </Placemark>
     <Placemark>
       <description>NATURALLY PROTECTED</description>
-      <styleUrl>#line2</styleUrl>
+      <styleUrl>#line3</styleUrl>
       <LineString>
         <altitudeMode>clampToGround</altitudeMode>
         <extrude>0</extrude>

@@ -10,7 +10,13 @@
   </Style>
   <Style id="line2">
     <LineStyle>
-      <color>FF346713</color>
+      <color>FF9F3BB5</color>
+      <width>1</width>
+    </LineStyle>
+  </Style>
+  <Style id="line3">
+    <LineStyle>
+      <color>FF00FFFF</color>
       <width>1</width>
     </LineStyle>
   </Style>
@@ -189,6 +195,23 @@
         <extrude>0</extrude>
         <tessellate>1</tessellate>
         <coordinates>
+          72.7797416655,19.2384191246,0
+          72.7794561784,19.2383239071,0
+          72.7792852436,19.2382375186,0
+          72.7791444972,19.2380535379,0
+          72.7790000401,19.2378019910,0
+          72.7789545145,19.2376727240,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <description>NATURALLY PROTECTED</description>
+      <styleUrl>#line3</styleUrl>
+      <LineString>
+        <altitudeMode>clampToGround</altitudeMode>
+        <extrude>0</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>
           72.7835517792,19.2611559660,0
           72.7832658760,19.2606836276,0
           72.7827991358,19.2601290508,0
@@ -196,23 +219,6 @@
           72.7823796819,19.2599238481,0
           72.7821740100,19.2599706820,0
           72.7820682460,19.2600096214,0
-        </coordinates>
-      </LineString>
-    </Placemark>
-    <Placemark>
-      <description>NATURALLY PROTECTED</description>
-      <styleUrl>#line2</styleUrl>
-      <LineString>
-        <altitudeMode>clampToGround</altitudeMode>
-        <extrude>0</extrude>
-        <tessellate>1</tessellate>
-        <coordinates>
-          72.7797416655,19.2384191246,0
-          72.7794561784,19.2383239071,0
-          72.7792852436,19.2382375186,0
-          72.7791444972,19.2380535379,0
-          72.7790000401,19.2378019910,0
-          72.7789545145,19.2376727240,0
         </coordinates>
       </LineString>
     </Placemark>
