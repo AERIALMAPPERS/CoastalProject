@@ -41,6 +41,9 @@
     <div id="zoomButtons">
         <div class="content">
             <button onclick="zoomOut()">A-</button>
+
+
+            
             <button onclick="resetZoom()">A</button>
             <button onclick="zoomIn()">A+</button>
             |
@@ -67,9 +70,16 @@
         <a href="service.html" onclick="setActive(this)">Services</a>
         <a href="features.html" onclick="setActive(this)">Features</a>
         <a href="gallery.html" onclick="setActive(this)">Gallery</a>
-        <a href="project_data.html" onclick="setActive(this)">Project</a>
-        <!-- <a href="project.html" onclick="setActive(this)">Project</a>
-      <a href="data.html" onclick="setActive(this)">Data</a>-->
+
+        <!-- Project Dropdown -->
+        <!-- <li class="dropdown"> -->
+            <a class="nav-link scrollto" href="#contact">Project</a>
+            <!-- <ul class="dropdown-content">
+                <a href="nav.html">Village List</a> -->
+                <!-- <li><a href="#details">Details</a></li>
+              <li><a href="#contact">Know More</a></li> -->
+            </ul>
+        </li>
     </nav>
     <!-- <br> -->
 
@@ -110,6 +120,97 @@
                     </button>
 
                 </form>
+                <div class="container">
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #e90f0f;"></div>
+                        <div class="color-text"> Artificially Protected Coastline</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #e8eb1d;"></div>
+                        <div class="color-text"> Naturally Protecte Coastline</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #27d4da;"></div>
+                        <div class="color-text">Unprotected Coastline </div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #dac827;"></div>
+                        <div class="color-text">Vulnerability Coastline</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #da27d1;"></div>
+                        <div class="color-text">High Tide Line</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #1f22f1;"></div>
+                        <div class="color-text">Low Tide Line</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #4b0534;"></div>
+                        <div class="color-text">Bund</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #df7117;"></div>
+                        <div class="color-text">Seawall</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #0c0a9e;"></div>
+                        <div class="color-text">Port/Harbour</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #da2727;"></div>
+                        <div class="color-text">Hazard Line</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #947306e5;"></div>
+                        <div class="color-text">Sand Dune</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #eeb20f;"></div>
+                        <div class="color-text">Eco Sensitive Zone</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #088f45f8;"></div>
+                        <div class="color-text">Mangroves</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #13ce96;"></div>
+                        <div class="color-text">Buffer Zone</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">DGPS Control Point</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">Pillar Location</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">Year wise Coastline</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #3ef0f0;"></div>
+                        <div class="color-text">Creek</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #2be7e7;"></div>
+                        <div class="color-text">River</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">Jetty</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">Railway Lines</div>
+                    </div>
+                    <div class="color-item">
+                        <div class="color-box" style="background-color: #d8bc20;"></div>
+                        <div class="color-text">Breakwater Structure</div>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
             <div id="label">
 
@@ -149,14 +250,21 @@
                 </form>
             </div>
         </div>
+        </div>
         <!-- <br><br><br> -->
         <div class="map-main">
             <!-- Google Earth GIF or other content goes here -->
             <!-- <img src="./video/google earth.gif" alt="Google Earth GIF" id="earthGif"> -->
             <div id="map-container"></div>
         </div>
+
     </main>
     <br>
+
+
+
+
+
     <!-- External Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -200,55 +308,6 @@
     <script src="./js/zoomInOut.js"></script>
     <script src="./js/project.js"></script>
 
-    <!-- <script src="./js/updateData.js"></script> -->
-
-    <a href="./data/REEL.kml"></a>
-
-    <a href="./data/MANGALWEDA.kml"></a>
-    <a href="./data/CHAINAGE/DWG/MUMBAI/ANDHERI/BANDRA.dwg"></a>
-    <a href="./data/CHAINAGE/KML/MUMBAI/ANDHERI/BANDRA.kml"></a>
-    <a href="./data/VILLAGE MAP/DWG/RATNAGIRI/RAJAPUR/TULSUDEWADI.dwg"></a>
-    <a href="./data/VILLAGE MAP/KML/SINDHUDURG/VENGURLA/SIDHHARTHWADI.kml"></a>
-
-    <a href="./data/PROTECTED LINES/ARTIFICIALLY PROTECTED COASTLINE/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg "></a>
-    <a href="./data/PROTECTED LINES/ARTIFICIALLY PROTECTED COASTLINE/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml "></a>
-    <a href="./data/PROTECTED LINES/NATURALLY PROTECTED COASTLINE/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg "></a>
-    <a href="./data/PROTECTED LINES/NATURALLY PROTECTED COASTLINE/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml "></a>
-    <a href="./data/PROTECTED LINES/UNPROTECTED COASTLINE/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg "></a>
-    <a href="./data/PROTECTED LINES/UNPROTECTED COASTLINE/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml "></a>
-
-    <a href="./data/TIDE LINES/HIGH TIDE/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg"></a>
-    <a href="./data/TIDE LINES/HIGH TIDE/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml"></a>
-    <a href="./data/TIDE LINES/LOW TIDE/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg"></a>
-    <a href="./data/TIDE LINES/LOW TIDE/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml"></a>
-
-    <a href="./data/SEAWALL/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg"></a>
-    <a href="./data/SEAWALL/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml"></a>
-
-    <a href="./data/FERRY LOCATION/DWG/MUMBAI SUBURBAN/ANDHERI/ANDHERI WEST.dwg"></a>
-    <a href="./data/FERRY LOCATION/KML/S"></a>
-
-    <a href="./data/PILLAR LOCATION/DWG/SINDHUDURG/VENGURLA/GAVATALE.dwg"></a>
-    <a href="./data/PILLAR LOCATION/KML/SINDHUDURG/VENGURLA/GAVATALE.kml"></a>
-
-    <a href="./data/SAND DUNE/DWG/SINDHUDURG/VENGURLA/UBHADANDA.dwg"></a>
-    <a href="./data/SAND DUNE/KML/SINDHUDURG/VENGURLA/UBHADANDA.kml"></a>
-
-    <a href="./data/HAZARDS LINE/DWG/SINDHUDURG/VENGURLA/KARLI.dwg"></a>
-    <a href="./data/HAZARDS LINE/KML/SINDHUDURG/VENGURLA/KARLI.kml"></a>
-
-    <a href="./data/BUND/DWG/MUMBAI/MUMBAI CITY/MUMBAI CITY.dwg"></a>
-    <a href="./data/BUND/KML/MUMBAI/MUMBAI CITY/MUMBAI CITY.kml"></a>
-
-    <a href="./data/ECOLOGICALLY SENSITIVE AREA/DWG/RATNAGIRI/GUHAGHAR/VARCHAPATH TARF GUHAGAR.dwg"></a>
-    <a href="./data/ECOLOGICALLY SENSITIVE AREA/KML/RATNAGIRI/GUHAGHAR/VARCHAPATH TARF GUHAGAR.kml"></a>
-
-    <a href="./data/VILLAGE WISE TOPOPLAN/1. BORDI.dwg"></a>
-    <a href="./data/VILLAGE WISE TOPOPLAN/ZAI.kml"></a>
-
-    <a href="./data/ADEE.kml"></a>
-
-    <a href="./data/MANGROOVES/UTHAN.kml"></a>
 
     <footer>
         <div class="footer-container">
@@ -337,6 +396,9 @@
         </div>
 
         <!-- <a href="./data/kmz/JALANA.kml"></a> -->
+      
+     
+
     </footer>
 
 </body>

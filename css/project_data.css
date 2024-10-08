@@ -5,6 +5,15 @@ main {
     color: white;
     background-color:rgb(238, 246, 255);
     display: flex;
+
+         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url('/image/bg1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+      
 }
 
 #maplist {
@@ -113,7 +122,114 @@ form select {
     /* background-color: rgb(255, 0, 0); */
     text-align: center;
 }
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh; 
+     margin: 0; 
+} */
 
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+ .color-item {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 5px; 
+   
+}
+
+.color-box {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    /* border-radius: 50%; */
+    border: 0.5px solid #000; 
+}
+
+.color-text {
+    font-size: 10px;
+    color: #000;
+  
+} 
+a.active{
+    color: #000;
+}
+a.active:hover{
+    color: rgb(165, 118, 118);
+}
+
+
+
+/* ////////////////////////////////// */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #e4abab;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Active link styling */
+/* nav a.active {
+    background-color: #555;
+} */
+
+/* Dropdown container */
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color:rgb(20, 124, 165);
+    min-width: 120px;
+    z-index: 1;
+    margin-top: 6px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #45caffcb;
+} 
 
 /* 200 to 300================================================================================================================================================================================= */
 @media only screen and (min-width: 200px) and (max-width: 300px) {
