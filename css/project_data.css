@@ -1,0 +1,490 @@
+main {
+    width: 100%;
+    /* height: 85vh; */
+    height: auto;
+    color: white;
+    background-color:rgb(238, 246, 255);
+    display: flex;
+
+         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url('/image/bg1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+      
+}
+
+#maplist {
+    width: 25%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    /* height: auto; */
+    border: 1px solid black;
+    background-color: rgb(234, 235, 235);
+ display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+#district_list{
+    border: 1px solid black;
+    
+}
+
+.map-main {
+    width: 75%;
+    /* background-color: #944c4c; */
+    display: flex;
+    /* border:1px solid black; */
+    margin-bottom: 2%;
+}
+#map-container{
+    width: 95%;
+    height: auto;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    border:1px solid black;
+
+}
+h2 {
+    font-size: 1vw;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    color: #008080;
+
+}
+
+/* download button animation */
+#downloadButton, #ShowButton {
+    background-color: #caf1f8;
+}
+#downloadButton img {
+    animation: moveArrow 2s ease-in-out infinite;
+}
+@keyframes moveArrow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+form {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form select {
+    width: 200px;
+    padding: 5px;
+    padding-left: 5px;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1); 
+    cursor: pointer;
+}
+ #label {
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+#label h2 {
+    text-align: center;
+}
+
+#label label {
+    color: black;
+    font-size: 0.8em;
+    display: block;  /*Each label on a new line */
+   align-self: start;
+   margin-top: -5px;
+}
+
+/* kml layer */
+ .text-label {
+    font-family:  Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold; 
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 0, 0); */
+    text-align: center;
+}
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh; 
+     margin: 0; 
+} */
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+ .color-item {
+    display: flex; 
+    align-items: center;
+    margin-bottom: 5px; 
+   
+}
+
+.color-box {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    /* border-radius: 50%; */
+    border: 0.5px solid #000; 
+}
+
+.color-text {
+    font-size: 10px;
+    color: #000;
+  
+} 
+a.active{
+    color: #000;
+}
+a.active:hover{
+    color: rgb(165, 118, 118);
+}
+
+
+
+/* ////////////////////////////////// */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #e4abab;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Active link styling */
+/* nav a.active {
+    background-color: #555;
+} */
+
+/* Dropdown container */
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color:rgb(20, 124, 165);
+    min-width: 120px;
+    z-index: 1;
+    margin-top: 6px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #45caffcb;
+} 
+
+/* 200 to 300================================================================================================================================================================================= */
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+    main {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color:rgb(238, 246, 255);
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #maplist {
+        width: 98%;
+        margin-top: 2%;
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+     display: flex;
+        justify-content: center;
+    }
+    .map-main {
+        width: 98%;
+        height: 450px;
+        display: flex;
+        margin-left: 3%;
+    }
+    #map-container{
+        width: 95%;
+        height: 450px;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        border:2px solid black;
+    
+    }
+    form select {
+        width: 80%;
+        background-color: #fff;
+        font-size: 0.75rem;   
+    }
+    h2 {
+        font-size: small;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        color: #008080;  
+    }
+    form {
+        gap: 2px;
+    }
+
+}
+
+/* mobile view ===============================================================================================================================================================================*/
+@media only screen and (min-width: 300px)and (max-width: 600px) {
+    
+    main {
+        width: 100%;
+        height: auto;
+        color: white;
+        background-color:rgb(238, 246, 255);
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #maplist {
+        width: 98%;
+        margin-top: 2%;
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+     display: flex;
+        justify-content: center;
+    }
+    .map-main {
+        width: 98%;
+        height: 450px;
+        display: flex;
+    }
+    #map-container{
+        width: 95%;
+        height: 450px;
+        margin-bottom: 2%;
+        margin-left: 2%;
+        border:1px solid black;
+    }
+    form select {
+        width: 80%;
+        background-color: #fff;
+        font-size: 0.75rem;   
+    }
+    h2 {
+        font-size: 3.5vw;
+        font-family: 'Courier New', Courier, monospace;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        color: #008080;  
+    }
+    form {
+        gap: 4px;
+    } 
+}
+
+/* 400 to 500================================================================================================================================================================================= */
+/* @media only screen and (min-width: 400px) and (max-width: 500px) {
+  
+} */
+
+/* Tablet View ===========================================================================================================================================================================*/
+@media only screen and (min-width: 600px) and (max-width: 750px) {
+
+    main {
+        width: 100%;
+        color: white;
+        display:flex;
+    }
+
+    .map-main {
+        width: 100%;
+    }
+    #maplist {
+        width: 95%;
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+    }
+    #maplist h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #map_container{
+        margin-left: 0px;
+        align-items: center;
+        border: 2px solid black;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    form select {
+        width: 80%;
+        background-color: #fff;
+        font-size: 0.75rem;   
+    }
+}
+
+/* 750 to 950   ======================================================================================================================================================================== */
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+
+    #maplist {
+        width: 50%;
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+    }
+    #maplist h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .map-main {
+        width: 70%;
+        margin-top: 10px;
+        display: flex;
+    }
+    #map {
+        width: 100%;
+        align-items: center;
+        border: 2px solid black;
+        display: flex;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    form select {
+        font-size: 0.8rem;  
+        width: 70%; 
+    } 
+}
+
+/* 950 to 1100   ======================================================================================================================================================================== */
+@media only screen and (min-width: 950px) and (max-width: 1100px) {
+   
+    main {
+        width: 100%;
+        color: white;
+    display:flex;
+    }
+    #maplist {
+        width: 50%;
+        border: 1px solid black;
+        background-color: rgb(234, 235, 235);
+    }
+    #maplist h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .map-main {
+        width: 70%;
+        margin-top: 10px;
+        display: flex;
+    }
+    form {
+        gap: 8px;
+    }
+    form select {
+        font-size: 0.9rem;   
+    }
+}
+
+/* laptop view  ========================================================================================================================================================================== */
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+
+    main {
+        width: 100%;
+        height: auto;
+        color: white;
+        display: flex;
+    }
+    #maplist {
+        width: 40%;
+    }
+    .map-main {
+        width: 70%;
+        margin-top: 10px;
+        display: flex;
+    }
+    h2 {
+        font-size: 1vw;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    } 
+    form select {
+        width: 150px;
+        padding-left: 5px;
+        background-color: #fff;
+        border-radius: 10px;
+        outline: none;
+        font-size: 1rem;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1); 
+        cursor: pointer;
+    } 
+    #label label{
+        color: black;
+        font-size: 0.7em;
+     }
+}
