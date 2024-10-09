@@ -6,10 +6,19 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url('/image/bg1.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      
 }
 
 
-.content{
+.contents{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +42,7 @@ main{
 }
 /* mobile view ==============================================================================================================================================================================*/
 @media only screen and (min-width: 200px)and (max-width: 600px) {
-    .content{
+    .contents{
         margin-top: 2%;
         margin-bottom: 2%;
         height: auto;

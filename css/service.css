@@ -8,6 +8,15 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-image: url('/image/bg1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      
 }
 .head{
     height: 30%;
@@ -111,12 +120,12 @@ color: #03b1b1;
 }
 .layer h3 {
     width: 100%;
-    /* font-weight: 500; */
+    /* /* font-weight: 500;  */
     color: aliceblue;
     font-size: 25px;
     position: absolute;
     text-align: center;
-    bottom: -50px; /* Initial position below the container */
+    bottom: -50px; 
     left: 0;
     margin: 0;
     opacity: 0;
