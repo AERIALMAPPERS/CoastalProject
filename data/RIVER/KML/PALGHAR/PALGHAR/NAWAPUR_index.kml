@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+<Folder>
+  <name>NAWAPUR_index Index</name>
+  <open>1</open>
+  <NetworkLink>
+    <Region>
+      <LatLonAltBox>
+        <north>19.80591626795881410</north>
+        <south>19.78177572333601475</south>
+        <east>72.70042668678225084</east>
+        <west>72.68677017740533586</west>
+        <minAltitude>0</minAltitude>
+        <maxAltitude>0</maxAltitude>
+      </LatLonAltBox>
+      <Lod>
+        <minLodPixels>1024</minLodPixels>
+        <maxLodPixels>-1</maxLodPixels>
+        <minFadeExtent>0</minFadeExtent>
+        <maxFadeExtent>0</maxFadeExtent>
+      </Lod>
+    </Region>
+    <name>NAWAPUR</name>
+    <Link>
+      <href>NAWAPUR.kml</href>
+    </Link>
+  </NetworkLink>
+</Folder>
+  <!-- Begin Style Definitions -->
+  <Style id="area1">
+    <LineStyle>
+      <color>FF000000</color>
+      <width>1</width>
+    </LineStyle>
+    <PolyStyle>
+      <color>7F000000</color>
+      <fill>0</fill>
+      <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle><text><![CDATA[$[description]]]></text></BalloonStyle>
+  </Style>
+  <Folder>
+    <name>Area Features</name>
+    <description>Area Features</description>
+    <Placemark>
+      <description><![CDATA[<a href="NAWAPUR.kml">Click Here to Open Tile</a>]]></description>
+      <name>NAWAPUR</name>
+      <styleUrl>#area1</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              72.6867701774,19.8057443113,0
+              72.6871165497,19.7817757233,0
+              72.7004266868,19.7819474550,0
+              72.7000823035,19.8059162680,0
+              72.6867701774,19.8057443113,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>
